@@ -1,0 +1,18 @@
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh/$fs;
+  letter-spacing: $ls;
+}
+
+// щоб викликати потрібно 
+// в те місце де ви хочете прописати 
+  //                                 font-weight
+  //                                 font-size
+  //                                 line-height
+  //                                 letter-spacing
+// вставляєте правило 
+  //                  @include font (x, x, x, x)
+// та в дужках через кому прописуєте значення з фігми, 
+// наприклад
+  //         @include font (700, 18px, 36px, 0.06em);

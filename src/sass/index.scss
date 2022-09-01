@@ -1,2 +1,31 @@
-@import './common';
-@import './example';
+// Модерн нормолайз
+@import './base/normolize';
+
+// Змінні сасс
+@import './utils/variables';
+
+// Скидання базових стилей
+@import './base/base-styles';
+
+// Брейкпоінти
+@import './utils/breakpoints';
+
+// Міксіни
+@import './utils/mixins';
+
+// Плейсхолдер (список)
+@import './utils/placeholders';
+
+// Стилі контейнера
+@import './common/container';
+
+// Стиля по секціям 
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
