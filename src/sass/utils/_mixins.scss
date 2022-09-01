@@ -1,7 +1,7 @@
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: $lh/$fs;
+  line-height: calc($lh / $fs);
   letter-spacing: $ls;
 }
 
@@ -16,3 +16,4 @@
 // та в дужках через кому прописуєте значення з фігми, 
 // наприклад
   //         @include font (700, 18px, 36px, 0.06em);
+
