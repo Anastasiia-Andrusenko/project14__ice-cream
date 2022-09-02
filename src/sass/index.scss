@@ -22,13 +22,17 @@
 // Приховані елементи
 @import './common/visually-hidden';
 
-// Стиля по секціям
+// Стиля по секціям + modal
 @import './layout/header';
+@import './modal-styles/by-now-modal';
 @import './layout/hero';
 @import './layout/products';
 @import './layout/about';
+@import './modal-styles/read-more-modal';
 @import './layout/advantages';
 @import './layout/gallery';
 @import './layout/customer-reviews';
 @import './layout/contacts';
+@import './modal-styles/location-modal';
+@import './modal-styles/franchise-modal';
 @import './layout/footer';
