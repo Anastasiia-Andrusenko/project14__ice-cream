@@ -19,6 +19,9 @@
 // Стилі контейнера
 @import './common/container';
 
+// Приховані елементи
+@import './common/visually-hidden';
+
 // Стиля по секціям 
 @import './layout/header';
 @import './layout/hero';
