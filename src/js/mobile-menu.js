@@ -1,5 +1,6 @@
 
 (() => {
+
   const mobileMenu = document.querySelector('.js-mobile-menu');
   const openMenuBtn = document.querySelector('.js-mobile-menu-open');
   const closeMenuBtn = document.querySelector('.js-mobile-menu__close-btn');

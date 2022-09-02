@@ -23,7 +23,17 @@
 
 }
 
-@media screen and  (max-width: 767px) {
+
+
+@media screen and  (max-width: 1199px) {
+
+    .button-hero {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+      }
 
     .button-hero {
 
@@ -47,6 +57,11 @@
         top: 0;
         left: 0;
         background-color: $main-color;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 500ms $cubic-bezier, visibility 500ms $cubic-bezier;
         
         transform: translate(100%);
     }
@@ -57,14 +72,23 @@
 
     }
     
+
+    .mobile-menu.is-open {
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+    }
     
     .mobile-menu__container {
     
         position: relative;
-        padding-top: 12px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-bottom: 12px;
+        padding: 12px 22px;
+        // padding-top: 12px;
+        // padding-left: 22px;
+        // padding-right: 22px;
+        // padding-bottom: 12px;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -142,6 +166,8 @@
 
 }
 
+@media screen and  (min-width: 768px) {
+
 
 
 // 0px - 1199px
@@ -189,6 +215,32 @@
     }
     
 
+
+    .logo_mobile-menu-icon {
+        width: 48px;
+        height: 44px;
+    }
+
+
+    .mobile-menu__list {
+       
+        margin-bottom: 60px;
+        margin-top: 140px
+    }
+
+
+    .mobile-menu__container {
+
+        padding: 20px 30px;
+
+    }
+
+    .mobile-menu__item:not(:last-child) {
+        margin-bottom: 40px;
+    
+    }
+
+
     .mobile-menu__link {
     
         @include font (700, 48px, 59px, 0.04em);
@@ -204,6 +256,7 @@
         
     
     }
+
     
     .mobile-menu__item:not(:last-child) {
         margin-bottom: 40px;
@@ -213,6 +266,22 @@
 
 
   
+
+
+    .button-hero--mobile {
+        display: none;
+    }
+
+
+}
+
+
+
+// 0px - 1199px
+@media screen and (min-width: 1200px) {
+    
+  }
+
 
   .mobile-menu-open {
     background-color: transparent;
@@ -228,6 +297,7 @@
   }
 
 
+
 @media screen and (min-width: 1200px) {
    
   
@@ -235,4 +305,5 @@
   
    
   }
+
 
