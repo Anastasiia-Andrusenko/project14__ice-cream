@@ -1,0 +1,25 @@
+.advantages__list {
+  @extend %list;
+}
+.advantages__header {
+  @include font(700, 36px, 42px, 0.04em);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 18px;
+}
+.advantages__descr {
+  @include font(700, 12px, 20px, normal);
+  font-family: 'Roboto', sans-serif;
+}
+.advantages__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+.advantages__header::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  margin-bottom: 16px;
+}
