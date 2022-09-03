@@ -5,7 +5,7 @@
 .btn {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+  
   color: black;
   padding: 12px 34px;
   border-radius: 10px;
@@ -19,7 +19,6 @@
   background-color: transparent;
   border: 2px solid $accent-color;
 
-  align-items: center;
   text-align: center;
 
   transition: border 300ms $cubic-bezier;
@@ -57,7 +56,6 @@
   background-color: $accent-color;
   border: none;
 
-  align-items: center;
   text-align: center;
 
   transition: background-color 300ms $cubic-bezier;
