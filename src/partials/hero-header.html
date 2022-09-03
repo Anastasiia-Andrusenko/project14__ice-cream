@@ -1,10 +1,137 @@
 <header>
-  <div class="container">
-    Heeeeeeader
+  <div class="container page-header-container">
+    <div class="header-right">
+    <!-- навігація -->
+    <nav class="page-nav">
+      <!-- <a class="logo" href="./">
+        <img src="./images/hero/logo.png" alt="Ice Cream">
+      </a> -->
+      <a class="logo" href="./">
+        <svg class="logo__img">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <!-- меню -->
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link link" href="#hero">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#about-us">About us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#how-made">How it's made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#products">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+    <div class="header-left">
+    <!-- кнопка "бургер" для мобільної і планшетної версії -->
+    <button type="button" class="mobile-menu-open js-mobile-menu-open" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="mobile-menu-open__icon" width="20" height="12">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <!-- кнопка в хедері для десктопної і планшетної версії -->
+    <button class="button-hero" type="button"  data-modal-open>Buy now</button>
+  </div>
+  </div>
+
+  <!-- мобільне меню -->
+  <div class="mobile-menu js-mobile-menu" id="mobile-menu">
+    <div class="container mobile-menu__container">
+      <!-- <div class="mobile-menu__header"> -->
+        
+        <a class="logo_mobile-menu" href="./" >
+          <svg class="logo_mobile-menu-icon" width="40" height="37">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+          <!-- <img src="./images/logo.png" alt="Ice Cream"> -->
+        </a>
+        <button class="mobile-menu__close-btn js-mobile-menu__close-btn">
+          <!-- <img src="./images/hero/close.png" width="19" height="19"> -->
+          <svg class="mobile-menu__close-icon" width="19" height="19">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+      <!-- </div> -->
+     
+      <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#hero">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#about-us">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#how-made">How it's made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#contact">Contact</a>
+        </li>
+        
+      </ul>
+      <button class="button-hero--mobile" type="button">Buy now</button>
+    </div>
   </div>
 </header>
-<section>
-  <div class="container">
-    I'm Hero section
-  </div>
+
+
+<section class="hero">
+  <div class="container hero-container">
+
+        <!-- ліва сторона hero  -->
+      <div class="hero-left-side">
+        <h1 class="title" lang="en">ice cream made with passion</h1>
+
+        <!-- посилання під title -->
+        <ul class="title-btn__list list">
+          <li class="title-btn__item">
+            <a class="title-btn__link--left link" href="#products">Products</a>
+          </li>
+          <li class="title-btn__item">
+            <a class="title-btn__link--right link" href="##how-made">How it's made?</a>
+          </li>
+          </ul>
+        
+          <!-- текст на hero -->
+        <p class="hero-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </p>
+
+        <!-- кнопка під текстом -->
+        <button class="hero-description__btn">
+          <svg class="hero-description__btn-icon" width="40" height="20">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+
+      <!-- права сторона hero -->
+      <div class="hero-right-side">
+        <ul class="network-list list">
+            <li class="network-list__item">
+              <p class="network-list__total">16</p>
+              <p class="network-list__text">cafes</p>
+            </li>
+            <li class="network-list__item">
+              <p class="network-list__total">23</p>
+              <p class="network-list__text">food trucks</p>
+            </li>
+          </ul>
+        </div>
+    </div>
 </section>
