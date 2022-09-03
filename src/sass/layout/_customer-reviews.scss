@@ -66,7 +66,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin: 32px 0 32px 0;
+    max-width: 968px;
+    margin: 32px auto 32px auto;
     padding: 39px 109px;
     @include font(500, 16px, 30px, 0.04em);
   }
@@ -82,7 +83,32 @@
   @media screen and (min-width: $tablet) {
     color: $text-second-color;
     @include font(500, 16px, 30px, 0.04em);
-
-    margin-bottom: 32px;
   }
+}
+
+// Slider
+
+.reviews__bullet .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 0;
+  font-size: 0;
+  opacity: 1;
+  background-color: #d9d9d9;
+  &:hover,
+  &:focus {
+    transform: scale(1.25);
+  }
+}
+
+.reviews__bullet .swiper-pagination-bullet-active {
+  background: $main-color;
+}
+
+.reviews__bullet .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 18px !important;
+}
+
+.swiper-pagination {
+  position: static !important;
 }
