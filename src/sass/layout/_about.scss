@@ -207,15 +207,15 @@
 //тимчасові стилі для кнопки
 //замінити
 .about__button {
-    display: block;
+    // display: block;
 
     min-width: 164px;
     height: 42px;
-    padding: 12px 34px;
+    // padding: 12px 34px;
 
-    background-color: #F8D24E;
-    @include font (600, 14px, 18px, 0em);
-    color: black;
+    // background-color: #F8D24E;
+    // @include font (600, 14px, 18px, 0em);
+    // color: black;
 
-    border-radius: 10px;
+    // border-radius: 10px;
 }
