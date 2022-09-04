@@ -10,23 +10,23 @@
     // align-items:center;
 }
 .footer-text__first{
-    @mixin font(700, 18px, 22px);
+    @include font(700, 18px, 22px);
     text-transform: uppercase;
     color: #FCFCFC;
 }
 .footer-text__second{
-    @mixin font(700, 34px, 41px, 0.04em);
+    @include font(700, 34px, 41px, 0.04em);
     text-transform: uppercase;
     color: #FCFCFC;
 }
 .footer-tel__text{
-    @mixin font(700, 12px, 22px, );
+    @include font(700, 12px, 22px);
     text-align: right;
     color: #131313;
 
 }
 .footer-copiright_text{
-    @mixin font(700, 14px, 21px, );
+    @include font(700, 14px, 21px);
     text-align: center;
     color: #7A7A7A;
 }
