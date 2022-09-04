@@ -1,18 +1,22 @@
-.footer_section{
-    width: 320px;
-    height: 366px;
+.footer__section{
+    width: auto;
     margin-bottom: 62px;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
 }
 .footer-text{
     display: flex;
     flex-direction: column;
-    // justify-content: left;
-    // align-items:center;
+    width: 235px;
+    margin-bottom: 42px;
 }
 .footer-text__first{
     @include font(700, 18px, 22px);
     text-transform: uppercase;
     color: #FCFCFC;
+    margin-bottom: 16px;
 }
 .footer-text__second{
     @include font(700, 34px, 41px, 0.04em);
@@ -25,15 +29,24 @@
     color: #131313;
 
 }
-.footer-copiright_text{
+.footer-copiright__text{
     @include font(700, 14px, 21px, );
     text-align: center;
     color: #7A7A7A;
 }
+.footer-tel__link{
+    @include font(700, 12px, 22px, );
+    text-align: right;
+    color: #fcfcfc;
 
+}
+.social-footer{
+    margin-bottom: 38px;
+}
 .social-footer__icon{
     width: 20px;
     height: 20px;
+    fill: #fcfcfc;
 }
 .social-footer__list{
     @extend %list;
