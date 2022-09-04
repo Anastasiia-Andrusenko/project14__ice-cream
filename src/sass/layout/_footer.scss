@@ -105,6 +105,18 @@
     .footer__container{
         justify-content: space-between;
     }
+    .footer-text__first {
+        @include font(700, 18px, 22px);
+       
+       
+        margin-bottom: 16px;
+    }
+
+    .footer-text__second {
+        @include font(700, 34px, 41px, 0.04em);
+       
+        color: #FCFCFC;
+    }
 }
 
 @media screen and (min-width: $desktop) {
