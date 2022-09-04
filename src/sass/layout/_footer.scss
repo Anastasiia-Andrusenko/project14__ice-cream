@@ -1,12 +1,15 @@
+.footer{
+    margin-bottom: 62px;
+
+}
 .footer__section{
     width: auto;
-    margin-bottom: 62px;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 16px;
 }
 .footer__container{
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #E1E1E1;
-    margin-bottom: 16px;
 }
 .footer-text{
     display: flex;
@@ -26,14 +29,14 @@
     color: #FCFCFC;
 }
 .footer-tel__text{
-    @include font(700, 12px, 22px, );
+    // @include font(700, 12px, 22px, );
     text-align: right;
     color: #131313;
 
 }
 .footer-tel__link{
     @include font(700, 12px, 22px, );
-    // display: flex;
+    
     text-align: right;
     color: #fcfcfc;
     // margin-left: auto;
@@ -87,7 +90,7 @@
 .footer-tel{
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
    
 }
 
@@ -98,6 +101,12 @@
 }
 
 @media screen and (min-width: $tablet) {
+    .footer {
+        margin-bottom: 13px;
+    }
+    .footer__section {       
+        margin-bottom: 13px;
+    }
     .footer__container,
     .footer-copiright {
         flex-direction:row;
@@ -105,18 +114,42 @@
     .footer__container{
         justify-content: space-between;
     }
+    .footer-text { 
+        width: 352px;
+        margin-bottom: 32px;
+    }
     .footer-text__first {
-        @include font(700, 18px, 22px);
-       
-       
-        margin-bottom: 16px;
+        @include font(700, 26px, 32px, 00.04em);
+        margin-bottom: 10px;
+    }
+    .footer-text__second {
+        @include font(700, 48px, 59px, 0.06em);
+              
+    }
+    .footer-tel__link {
+        @include font(700, 14px, 26px, );        
+    }
+    .footer-copiright__text {
+        @include font(700, 14px, 26px, 0.02em);
+    }
+    .social-footer__link {       
+        width: 34px;
+        height: 34px;
+    }
+    .social-footer__icon {
+        fill: #84A178;
+    }
+    .social-footer {
+        margin-bottom: 32px;
+    }
+    .footer-tel {
+        margin-bottom: 56px;
+    }
+    .footer-social-tel {
+        // justify-content: center;
+        margin-top: auto;
     }
 
-    .footer-text__second {
-        @include font(700, 34px, 41px, 0.04em);
-       
-        color: #FCFCFC;
-    }
 }
 
 @media screen and (min-width: $desktop) {
