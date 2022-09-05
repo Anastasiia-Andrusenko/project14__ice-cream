@@ -2,8 +2,7 @@
   background-image: url(../images/reviews/reviewsBackground_mobilex1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 186px;
-  padding-bottom: 419px;
+  padding: 186px 0 419px 0;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -14,8 +13,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-top: 223px;
-    padding-bottom: 428px;
+    padding: 223px 0 428px 0;
     background-image: url(../images/reviews/reviewsBackground_tabletx1.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -28,8 +26,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 456px;
-    padding-bottom: 240px;
+    padding: 456px 0 240px 0;
     background-image: url(../images/reviews/reviewsBackground_desktopx1.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -83,10 +80,10 @@
   @media screen and (min-width: $tablet) {
     color: $text-second-color;
     @include font(500, 16px, 30px, 0.04em);
+
+    margin-bottom: 32px;
   }
 }
-
-// Slider
 
 .reviews__bullet .swiper-pagination-bullet {
   width: 12px;
@@ -102,13 +99,15 @@
 }
 
 .reviews__bullet .swiper-pagination-bullet-active {
-  background: $main-color;
+  background-color: $main-color;
 }
 
-.reviews__bullet .swiper-pagination-bullet:not(:last-child) {
-  margin-right: 18px !important;
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 18px;
 }
 
-.swiper-pagination {
-  position: static !important;
+.reviews__bullet.swiper-pagination {
+  position: static;
 }

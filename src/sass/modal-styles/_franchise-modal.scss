@@ -56,12 +56,7 @@
   }
   &__btn {
     @include font(600, 12px, 15px, normal);
-    display: block;
     margin: 0 auto;
-    color: #000000;
-    padding: 7px 43px;
-    background-color: #f8d24e;
-    border-radius: 10px;
   }
   &__close {
     position: absolute;
