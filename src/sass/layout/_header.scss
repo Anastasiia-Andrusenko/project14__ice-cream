@@ -197,7 +197,7 @@
         height: 42px;
         border-radius: 10px;
         border: none;
-        // background-color: $accent-color;
+        background-color: $accent-color;
 
         text-align: center;
         font-weight: 600;
@@ -327,6 +327,11 @@
         // padding: 18px;
         // margin-right: 26px;
            margin-top: 16px;
+    }
+
+
+    .button-hero--mobile {
+        display: none;
     }
 
 
