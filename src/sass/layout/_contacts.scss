@@ -19,6 +19,8 @@
   background-color: $text-main-color;
 
   @include font(500, 12px, 22px, 0.04em);
+
+  transition: transform 250ms linear;
 }
 .contacts__address-map {
   font-style: normal;
@@ -200,4 +202,12 @@
   .contacts__address-contact {
     line-height: 1.81;
   }
+}
+
+// --------Анимация------
+
+.contacts-items:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
