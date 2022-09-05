@@ -43,6 +43,7 @@
   padding: 12px 34px;
   border-radius: 10px;
 
+
   text-align: center;
 
   transition: border 300ms $cubic-bezier;
@@ -61,11 +62,16 @@
   }
   
   @media screen and (max-width: 767px) {
-    padding: 10px 46px;
-    border-radius: 10px;
-    @include font (600, 14px, 18px);
+    padding: 4px 9px;
+    border-radius: 8px;
+    @include font (600, 8px, 10px);
   }
 
+  @media screen and (min-width: $desktop) {
+    &:focus {
+      @include font (700, 15px, 18px);
+    }
+  }
 }
 
 // ==============Кнопка із заливкою
@@ -141,3 +147,125 @@
   color: $text-main-color;
 }
 
+// ==============Загальні стилі для всіх кнопок
+
+.btn {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    
+    color: black;
+    padding: 12px 34px;
+    border-radius: 10px;
+  
+    @include font (600, 14px, 18px);
+  }
+  
+  // ==============Кнопка прозора з рамкою
+  
+  .btn-border {
+    background-color: transparent;
+    border: 2px solid $accent-color;
+  
+    text-align: center;
+  
+    transition: border 300ms $cubic-bezier;
+  
+    &:hover {
+      border: 2px solid $hover-color;
+    }
+  
+    &:focus {
+      @include font (600, 9px, 11px);
+      border: 2px solid $hover-color;
+    }
+  
+    &:disabled {
+      border: 2px solid $disabled-color;
+    }
+    
+    @media screen and (max-width: 767px) {
+      padding: 4px 9px;
+      border-radius: 8px;
+      @include font (600, 8px, 10px);
+    }
+  
+    @media screen and (min-width: $desktop) {
+      &:focus {
+        @include font (700, 15px, 18px);
+      }
+    }
+  }
+  
+  // ==============Кнопка із заливкою
+  
+  .btn-fill {
+    display: block;
+    background-color: $accent-color;
+    border: none;
+  
+    text-align: center;
+  
+    transition: background-color 300ms $cubic-bezier;
+  
+    &:hover {
+      background-color: $hover-color;
+    }
+  
+    &:focus {
+      @include font (600, 9px, 11px);
+      background-color: $hover-color;
+    }
+  
+    &:disabled {
+      background-color: $disabled-color;
+    }
+    
+    @media screen and (max-width: 767px) {
+      padding: 4px 9px;
+      border-radius: 8px;
+      @include font (600, 8px, 10px);
+    }
+  
+    @media screen and (min-width: $desktop) {
+      &:focus {
+        @include font (700, 15px, 18px);
+      }
+    }
+  }
+  
+  // =========Повністю прозора кнопка
+  
+  .btn-transparent {
+    background-color: transparent;
+    color: $accent-color;
+    text-decoration:underline;
+    
+    transition: color 300ms $cubic-bezier;
+  
+    @media screen and (max-width: 767px){
+      @include font (600, 8px, 10px);
+    }
+  
+    &:hover {
+      color: $hover-color;
+    }
+    &:focus {
+      color: $hover-color;
+      @include font (600, 9px, 11px);
+    }
+    &:disabled {
+      color: $disabled-color;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      &:focus {
+        @include font (700, 15px, 18px);
+      }
+    }
+  }
+  
+  //=========кнопка з бордером та інверсія текста
+  .btn-border--invert {
+    color: $text-main-color;
+  }
+ 
