@@ -218,15 +218,12 @@
 //тимчасові стилі для кнопки
 //замінити
 .about__button {
-    display: block;
-
-    min-width: 164px;
-    height: 42px;
-    padding: 12px 34px;
-
-    background-color: #F8D24E;
-    @include font (600, 14px, 18px, 0em);
-    color: black;
-
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
+
+.about__arrow {
+    display: inline-block;
+    margin-right: 16px;
+}
+
