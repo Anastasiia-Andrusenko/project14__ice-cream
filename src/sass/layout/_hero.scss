@@ -1,1 +1,650 @@
+.network-list {
+    @extend %list;
+}
 
+
+.title-btn__list {
+    display: flex;
+    @extend %list;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .hero {
+        height: 450px;
+        // height: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url('../images/hero/point-mobile.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        
+}
+
+
+.hero-container {
+    width: 320px;
+    height: 502px;
+    
+}
+
+.big-ice {
+    position: absolute;
+    width: 270px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url('../images/hero/ice-cream-mobile.png');
+    background-position: left 68px top 67px;
+    filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
+    z-index: 10;
+
+
+    ////////////////////////Anamation-big-ice/////////////////////
+    animation-name: blinker;
+    animation-iteration-count: 4;
+    animation-timing-function: $cubic-bezier;
+    animation-duration: 600ms;
+
+}
+
+@keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }
+
+
+
+.face-img {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url('../images/hero/face-yellow-mobile.png'), url('../images/hero/face-pink-mobile.png'), url('../images/hero/face-pink-mobile.png');
+
+    background-position: left 41% top 25%, left 70% top 16%, left 75% top 34%;
+    z-index: 15;
+    width: 270px;
+    height: 500px;
+    position: absolute;
+
+   
+
+}
+
+// .hero-right-side {
+//     position: relative;
+// }
+
+.title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    text-transform: uppercase;
+    color: $text-main-color;
+
+    margin-top: 58px;
+    margin-bottom: 32px;
+
+}
+
+.title-small-fonts {
+    @include font (400, 26px, 33px, 0.04em);
+
+}
+
+.title-big-fonts {
+
+    
+    @include font (400, 34px, 33px, 0.04em);
+    
+
+
+}
+
+.hero-description {
+    display: none;
+
+}
+.hero-description__btn {
+    display: none;
+}
+
+.network-list {
+    display: none;
+}
+
+.title-btn__item {
+    margin-right: 8px;
+   
+}
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+
+        position: relative;
+        height: 385px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../images/hero/point-tablet.png');
+        background-size: contain;
+        background-position: bottom;        
+        
+      
+        }
+
+        
+.hero-container {
+    width: 100%;
+    height: 385px;
+    display: flex;
+    
+}
+
+.hero-left-side {
+    width: 50%;
+}
+
+
+.hero-right-side {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.big-ice {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url('../images/hero/ice-cream-tablet.png');
+    background-position: left 23px top 62px;
+    filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
+    z-index: 10;
+
+    ////////////////////////Anamation-big-ice/////////////////////
+    animation-name: blinker;
+    animation-iteration-count: 4;
+    animation-timing-function: $cubic-bezier;
+    animation-duration: 600ms;
+
+}
+
+@keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }
+
+
+.face-img {
+
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url('../images/hero/face-yellow-tablet.png'), url('../images/hero/face-green-tablet.png'), url('../images/hero/face-pink-tablet.png');
+
+    background-position: left 5% top 31%, left 55% top 15%, left 58% top 48%;
+    z-index: 15;
+    width: 300px;
+    height: 500px;
+    
+
+   
+
+}
+
+.title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    text-transform: uppercase;
+    color: $text-main-color;
+
+    margin-top: 36px;
+    margin-bottom: 20px;
+
+
+    width: 181px;
+
+}
+
+.title-small-fonts {
+    @include font (400, 18px, 23px, 0.04em);
+
+}
+
+.title-big-fonts {
+
+    
+    @include font (400, 24px, 13px, 0.04em);
+    
+
+
+}
+
+
+
+.network-list {
+    width: 46px;
+    margin-top: 26px;
+}
+
+.network-list__item {
+    margin-bottom: 20px;
+}
+
+.network-list__total{
+    font-family: 'Montserrat';
+    @include font (900, 28px, 34px, 0.04em);
+    text-align: right;
+    text-transform: uppercase;
+     color: #000000;
+     margin-bottom: 4px;
+    
+}
+
+.network-list__text {
+    display: flex;
+
+    justify-content: flex-end;
+
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+
+.title-btn__item {
+    margin-right: 8px;
+    margin-bottom: 28px;
+}
+
+.plate-ice {
+    width: 100%;
+    height: 170px;
+    position: relative;
+    background-position: left 30px;
+    margin-right: 7px;
+
+   
+
+    
+}
+
+.plate-ice__img {
+    background-image: url('../images/hero/plate-ice-tablet.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    background-position: left 4px top 25px;
+    position: absolute;
+    width: 100%;
+    height: 172px;
+
+
+
+    /////////////////Animation plate///////////////////
+
+
+    animation-name: rot;
+    animation-duration: 600ms;
+    animation-direction: alternate;
+    animation-timing-function: $cubic-bezier;
+    animation-iteration-count: 4;
+
+}
+
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+.hero-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-description__block {
+
+    width: 322px;
+    height: 85px;
+    margin-top: 52px;
+    margin-bottom: 20px;
+    
+
+
+}
+
+
+.hero-description__text {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+        /* or 17px */
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+    
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+    .hero {
+        position: relative;
+
+        height: 590px;
+        // width: 100%;
+
+        background-repeat: no-repeat;
+        background-image: url('../images/hero/point-desktop.png');
+        background-size: contain;
+        background-position: bottom;        
+        width: 1200px;
+        margin: 0 auto;
+      
+        }
+
+        .hero-container {
+            display: flex;
+            justify-content: space-between;
+            // width: 1200px;
+            height: 590px;
+
+            padding: 0 17px;
+            max-width: 1200px;
+        }
+
+
+        .big-ice {
+            // position: absolute;
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-image: url('../images/hero/ice-cream-desktop.png');
+            background-position: left 66px top 29px;
+            filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
+            z-index: 10;
+
+
+////////////////////////Anamation-big-ice/////////////////////
+animation-name: blinker;
+animation-iteration-count: 4;
+animation-timing-function: $cubic-bezier;
+animation-duration: 600ms;
+
+}
+
+@keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+    }
+
+.hero-left-side {
+    width: 50%;
+}
+
+
+.hero-right-side {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+
+   .face-img {
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-image: url('../images/hero/face-yellow-desktop.png'), url('../images/hero/face-green-desktop.png'), url('../images/hero/face-pink-desktop.png');
+                    // background-image: url('../images/hero/face-yellow-desktop.png'), url('../images/hero/face-green-tablet.png'), url('../images/hero/face-pink-tablet.png'), url('../images/hero/ice-cream-tablet.png');
+                    background-position: left 3% top 43%, left 60% top 9%, left 69% top 81%;
+                    z-index: 15;
+                    width: 472px;
+                    height: 500px;
+                    position: absolute;
+
+                }
+
+
+                .title {
+               
+                    margin-top: 41px;
+                    margin-bottom: 28px;
+
+
+                    width: 367px;
+        
+                }
+                
+                .title-small-fonts {
+                    @include font (400, 38px, 48px, 0.04em);
+        
+                }
+        
+                .title-big-fonts {
+        
+                    
+                    @include font (400, 38px, 48px, 0.04em);
+                    
+        
+        
+                }
+
+
+
+                .network-list {
+                    width: 79px;
+                    margin-top: 56px;
+                }
+
+                .network-list__item {
+                    margin-bottom: 37px;
+                }
+
+                .network-list__total{
+                    font-family: 'Montserrat';
+                    @include font (900, 46px, 56px, 0.04em);
+                
+                    text-align: right;
+                
+                    text-transform: uppercase;
+                
+                     color: #000000;
+                     margin-bottom: 4px;
+                    
+                }
+
+                .network-list__text {
+                    display: flex;
+
+                    justify-content: flex-end;
+
+                    // font-family: 'Montserrat';
+                    // font-style: normal;
+                    // @include font (400, 8px, 10px, 0.04em);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    /* identical to box height */
+                    text-align: right;
+                    color: #FFFFFF;
+                }
+
+
+                .title-btn__item {
+                    margin-right: 34px;
+                    margin-bottom: 42px;
+                }
+
+
+
+                .plate-ice {
+                    width: 100%;
+                    height: 225px;
+                    position: relative;
+                    background-position: left 30px;
+                    margin-right: 14px;
+
+                  
+
+                    
+                }
+
+                .plate-ice__img {
+                    background-image: url('../images/hero/plate-ice-desktop.png');
+                    background-size: auto;
+                    background-repeat: no-repeat;
+
+                    background-position: left 0 top 28px;
+                    position: absolute;
+                    width: 270px;
+                    height: 270px;
+
+
+                    ////////////////////Animation plate////////////////
+
+                    // animation-name: rot;
+                    // animation-duration: 600ms;
+                    // animation-direction: alternate;
+                    // animation-iteration-count: 4;
+                    // animation-timing-function: $cubic-bezier;
+
+                    transform-origin:50%;
+                    animation: 600ms rot  linear;
+                    animation-iteration-count: 4;
+                    animation-timing-function: $cubic-bezier;
+                    
+                }
+
+
+                @keyframes rot {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+                    50% {
+                        transform: rotate(360deg);
+                    }
+                    100% {
+                      transform: rotate(0deg);
+                    }
+                  }
+
+
+                .hero-description {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .hero-description__block {
+
+                    width: 200px;
+                    height: 80px;
+                    // margin-left: 217px;
+                    margin-top: 106px;
+                    margin-bottom: 20px;
+                    // display: block;
+                   
+
+
+                }
+
+
+                .hero-description__text {
+
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    // line-height: 140%;
+                    /* or 17px */
+                    color: #FFFFFF;
+                    margin-bottom: 32px;
+                    width: 200px;
+
+                    
+                }
+
+                // .hero-description__btn {
+                //     // margin-left: 217px;
+                //     // margin-bottom: 32px;
+                // }
+
+                .hero-left-side {
+
+                    width: 440px;
+                }
+
+
+               
+
+
+
+
+
+}
+
+
+// height: 450px;
+// // height: 100%;
+// width: 100%;
+// position: relative;
+// background-image: url('../images/hero/point-mobile.png');
+// background-repeat: no-repeat;
+// background-size: contain;
+// background-position: bottom;
+
+// }
+
+
+// .hero-container {
+// width: 320px;
+// height: 502px;
+
+// }
+
+// .big-ice {
+// position: absolute;
+// width: 270px;
+// height: 100%;
+// background-repeat: no-repeat;
+// background-size: auto;
+// background-image: url('../images/hero/ice-cream-mobile.png');
+// background-position: left 68px top 67px;
+// filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
+// z-index: 10;
+
+
+// ////////////////////////Anamation-big-ice/////////////////////
+// animation-name: blinker;
+// animation-iteration-count: 4;
+// animation-timing-function: $cubic-bezier;
+// animation-duration: 600ms;
+
+// }
+
+// @keyframes blinker {
+// from { opacity: 1.0; }
+// to { opacity: 0.0; }
+// }

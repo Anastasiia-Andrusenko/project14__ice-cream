@@ -1,6 +1,7 @@
 .container {
   padding: 0 20px;
   margin: auto;
+  width: auto;
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
