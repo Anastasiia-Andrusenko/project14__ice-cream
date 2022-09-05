@@ -22,6 +22,7 @@
 
   transition: transform 250ms linear;
 }
+
 .contacts__address-map {
   font-style: normal;
 
@@ -61,6 +62,15 @@
 }
 .contacts__link--map {
   color: #d6936d;
+  transition: border-bottom 250px linear;
+}
+.contacts__link--map:hover,
+.contacts__link--map:focus {
+  border-bottom: 1px solid #d6936d;
+}
+
+.contacts__link--map:hover::after {
+  width: 100%;
 }
 .contacts--work-time {
   color: $text-time-color;
