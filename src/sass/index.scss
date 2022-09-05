@@ -1,5 +1,5 @@
 // Модерн нормолайз
-@import './base/normolize';
+@import './base/normalize';
 
 // Змінні сасс
 @import './utils/variables';
@@ -13,19 +13,36 @@
 // Міксіни
 @import './utils/mixins';
 
+// Cтилі для кнопок
+@import './common/button';
+
 // Плейсхолдер (список)
 @import './utils/placeholders';
 
 // Стилі контейнера
 @import './common/container';
 
-// Стиля по секціям 
+// Приховані елементи
+@import './common/visually-hidden';
+
+// Стиля по секціям + modal
 @import './layout/header';
+@import './modal-styles/by-now-modal';
+
 @import './layout/hero';
+
 @import './layout/products';
+@import './modal-styles/modal-ingredients';
+
 @import './layout/about';
+@import './modal-styles/read-more-modal';
+
 @import './layout/advantages';
 @import './layout/gallery';
 @import './layout/customer-reviews';
 @import './layout/contacts';
+
+@import './modal-styles/location-modal';
+@import './modal-styles/franchise-modal';
+
 @import './layout/footer';

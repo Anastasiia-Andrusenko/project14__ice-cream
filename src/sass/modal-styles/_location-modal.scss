@@ -1,0 +1,107 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+
+  transition: opacity 250ms linear, visibility 250ms linear;
+  opacity: 1;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.contacts__modal-location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 280px;
+  height: 355px;
+  margin-top: 24px;
+
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  background-color: $second-background-color;
+}
+.modalform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px;
+}
+.modalform__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: #000000;
+}
+.modalform__map--link {
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.modal__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  padding: 4.5px;
+  background-color: transparent;
+
+  transition: border-color 250ms linear;
+}
+.icon-close {
+  transition: fill 250ms linear;
+
+  .modal__close-btn:hover &,
+  .modal__close-btn:focus & {
+    fill: $accent-color;
+  }
+}
+.modal__map-open {
+  width: 150px;
+  @include font(600, 12px, 15px);
+  padding: 7px 37px;
+}
+
+@media screen and (min-width:$tablet) {
+  .contacts__modal-location{
+    width: 568px;
+    height: 458px;
+  }
+  .modalform__map--link{
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px
+  }
+  .modalform__title{
+    @include font(400, 20px, 28px);
+    margin-bottom: 32px;
+  }
+  .modal__map-open {
+    padding: 12px 34px;
+  }
+}
+
+.icon-close {
+  fill: #000000;
+}
