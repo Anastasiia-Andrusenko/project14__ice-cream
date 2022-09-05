@@ -1,0 +1,229 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 42px;
+    background-color: $main-color;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 53px
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 60px;
+    }
+}
+
+//   Cвій контейнер
+.about__container {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        padding: 0 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        padding: 0 15px;
+    }
+}
+
+.about__subtitle {
+    margin-bottom: 12px;
+
+    @include font (700, 18px, 22px, 0em);
+
+    color: $text-main-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        @include font (800, 22px, 27px, 0.04em);
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include font (800, 30px, 34px, 0.04em);
+    }
+}
+
+.about__title {
+    margin-bottom: 32px;
+
+    @include font (400, 30px, 38px, 0.04em);
+
+    font-family: 'Seymour One', sans-serif;
+    color: $text-main-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+
+        @include font (400, 34px, 43px, 0.06em);
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 82px;
+
+        @include font (400, 36px, 45px, 0.06em);
+    }
+}
+
+.about__flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.about__image-appearance {
+    position: relative;
+    background-color: $yellow-background;
+    border-radius: 50%;
+
+    @media screen and (max-width: calc($tablet - 1px)) {
+        margin-bottom: 40px;
+        width: 278px;
+        height: 278px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 32px;
+        width: 330px;
+        height: 330px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-right: 100px;
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+.about__image {
+    position: absolute;
+    display: block;   
+    border-radius: 50%;
+
+    background-color: #9bd183;
+
+    @media screen and (max-width: calc($tablet - 1px)) {
+        top: 25px;
+        left: 0px;
+
+        margin-bottom: 40px;
+        width: 278px;
+        height: 278px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        top: 30px;
+        left: 0px;
+
+        width: 330px;
+        height: 330px;
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 40px;
+        left: 0px;
+
+        width: 490px;
+        height: 490px;
+    }
+}
+
+.about__text-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        align-items: flex-start;
+    }
+}
+
+.about__text {
+    margin-bottom: 20px;
+    
+    @media screen and (max-width: calc($tablet - 1px)) {
+        width: 100%;
+        
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        // padding-top: 39px;
+        margin-bottom: 48px;
+    }
+
+    // @media screen and (min-width: $desktop) {
+    //     padding-top: 39px;
+    // }
+}
+
+.about__paragraph {
+    @include font (400, 12px, 21px, 0.04em);
+    
+    @media screen and (max-width: calc($tablet - 1px)) {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 334px;
+        text-align: left;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 463px;
+
+        @include font (400, 14px, 27px, 0.04em);
+
+        &:first-child {
+            @include font (400, 16px, 28px, 0.04em);
+        }
+    }
+
+    // margins between paragraphs
+    &:not(:last-child) {
+        margin-bottom: 4px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 8px;
+        }
+    }
+
+    // on mobile the last paragraph disapears   
+    &--invisible {
+        @media screen and (max-width: calc($tablet - 1px)) {
+            display: none;
+        }
+    }
+}
+
+//тимчасові стилі для кнопки
+//замінити
+.about__button {
+    display: flex;
+    align-items: center;
+}
+
+.about__arrow {
+    display: inline-block;
+    margin-right: 16px;
+}
+

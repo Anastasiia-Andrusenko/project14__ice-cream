@@ -221,7 +221,14 @@
  
     }
 
-
+    .title-btn__link--left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
+        height: 24px;
+        @include font (600, 8px, 10px);
+    }
 
 }
 

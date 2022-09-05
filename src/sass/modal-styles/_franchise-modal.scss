@@ -1,0 +1,115 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.franchise {
+  position: relative;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px;
+  max-width: 280px;
+  background-color: $second-background-color;
+  &__header {
+    font-family: 'Seymour One';
+    @include font(400, 16px, 24px, normal);
+    color: #000000;
+    margin-bottom: 20px;
+    max-width: 221px;
+  }
+  &__descr {
+    @include font(400, 14px, 20px, normal);
+    color: #000000;
+    margin-bottom: 24px;
+  }
+  &__input {
+    width: 100%;
+    padding: 8px 12px 7px;
+    margin-bottom: 12px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    &::placeholder {
+      @include font(400, 12px, 17px, normal);
+      color: #000000;
+    }
+  }
+  &__comment {
+    width: 100%;
+    padding: 8px 12px 7px;
+    height: 64px;
+    margin-bottom: 21px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    &::placeholder {
+      @include font(400, 12px, 17px, normal);
+      color: #000000;
+    }
+  }
+  &__btn {
+    @include font(600, 12px, 15px, normal);
+    margin: 0 auto;
+  }
+  &__close {
+    position: absolute;
+    fill: #000000;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .franchise {
+    height: 668px;
+    padding: 32px 60px;
+    max-width: 572px;
+    text-align: center;
+    &__header {
+      @include font(400, 20px, 28px, normal);
+      max-width: 332px;
+      margin: 0 auto 24px auto;
+    }
+    &__descr {
+      @include font(400, 16px, 22px, normal);
+      max-width: 448px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    &__input {
+      max-width: 368px;
+      margin: 0 auto 16px auto;
+      padding: 11px 16px;
+      &::placeholder {
+        @include font(400, 14px, 20px, normal);
+      }
+    }
+    &__comment {
+      max-width: 368px;
+      margin: 0 auto 24px auto;
+      padding: 11px 16px;
+      height: 84px;
+      &::placeholder {
+        @include font(400, 14px, 20px, normal);
+      }
+    }
+    &__btn {
+      @include font(600, 14px, 17px, normal);
+      padding: 12px 43px;
+    }
+    &__close {
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
