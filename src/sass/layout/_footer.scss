@@ -1,18 +1,81 @@
-.footer_section{
-    width: 320px;
-    height: 366px;
+.footer{
     margin-bottom: 62px;
+
+}
+
+.footer_section {
+  width: 320px;
+  height: 366px;
+  margin-bottom: 62px;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  // justify-content: left;
+  // align-items:center;
+}
+.footer-text__first {
+  @include font(700, 18px, 22px);
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.footer-text__second {
+  @include font(700, 34px, 41px, 0.04em);
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.footer-tel__text {
+  @include font(700, 12px, 22px);
+  text-align: right;
+  color: #131313;
+}
+.footer-copiright_text {
+  @include font(700, 14px, 21px);
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.social-footer__icon {
+  width: 20px;
+  height: 20px;
+}
+.social-footer__list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+  height: 32px;
+  margin-left: auto;
+}
+.social-footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+
+.footer__section{
+    width: auto;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 16px;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
 }
 .footer-text{
     display: flex;
     flex-direction: column;
-    // justify-content: left;
-    // align-items:center;
+    width: 235px;
+    margin-bottom: 42px;
 }
 .footer-text__first{
     @include font(700, 18px, 22px);
     text-transform: uppercase;
     color: #FCFCFC;
+    margin-bottom: 16px;
 }
 .footer-text__second{
     @include font(700, 34px, 41px, 0.04em);
@@ -20,20 +83,42 @@
     color: #FCFCFC;
 }
 .footer-tel__text{
-    @include font(700, 12px, 22px);
+    // @include font(700, 12px, 22px, );
     text-align: right;
     color: #131313;
 
 }
-.footer-copiright_text{
-    @include font(700, 14px, 21px);
+.footer-tel__link{
+    @include font(700, 12px, 22px, );
+    
+    text-align: right;
+    color: #fcfcfc;
+    // margin-left: auto;
+
+}
+.footer-social-tel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-copiright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-copiright__text{
+    @include font(700, 14px, 21px, );
+    
     text-align: center;
     color: #7A7A7A;
 }
-
+.social-footer{
+    margin-bottom: 38px;
+}
 .social-footer__icon{
     width: 20px;
     height: 20px;
+    fill: #fcfcfc;
 }
 .social-footer__list{
     @extend %list;
@@ -53,6 +138,101 @@
     background-color: #f8d24e;
     
 }
-.social-footer__item{
+.link {
+    text-decoration: none;
+}
+.footer-tel{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+   
+}
 
+
+
+@media screen and (min-width: $mobile) {
+    
+}
+
+@media screen and (min-width: $tablet) {
+    .footer {
+        margin-bottom: 13px;
+    }
+    .footer__section {       
+        margin-bottom: 13px;
+    }
+    .footer__container,
+    .footer-copiright {
+        flex-direction:row;
+    }
+    .footer__container{
+        justify-content: space-between;
+    }
+    .footer-text { 
+        width: 352px;
+        margin-bottom: 32px;
+    }
+    .footer-text__first {
+        @include font(700, 26px, 32px, 0.04em);
+        margin-bottom: 10px;
+    }
+    .footer-text__second {
+        @include font(700, 48px, 59px, 0.06em);
+              
+    }
+    .footer-tel__link {
+        @include font(700, 14px, 26px, );        
+    }
+    .footer-copiright__text {
+        @include font(700, 14px, 26px, 0.02em);
+    }
+    .social-footer__link {       
+        width: 34px;
+        height: 34px;
+    }
+    .social-footer__icon {
+        fill: #84A178;
+    }
+    .social-footer {
+        margin-bottom: 32px;
+    }
+    .footer-tel {
+        margin-bottom: 56px;
+    }
+    .footer-social-tel {
+        margin-top: auto;
+    }
+
+}
+
+@media screen and (min-width: $desktop) {
+    .footer {
+        margin-bottom: 11px;
+    }
+    .footer__section {
+        margin-bottom: 12px;
+    }
+    .footer-text {
+        width: 505px;
+        margin-bottom: 54px;
+    }
+    .footer-text__first {
+        @include font(400, 30px, 37px, 0.04em);
+        margin-bottom: 14px;
+    }
+    .footer-text__second {
+        @include font(700, 58px, 71px, 0.06em);
+    }
+    .footer-tel__link {
+        @include font(700, 16px, 30px, 00.02em);
+    }
+    .footer-copiright__text {
+        @include font(700, 12px, 22px, 0.02em);
+    }
+    .social-footer {
+        margin-bottom: 40px;
+    }
+    .footer-tel {
+        margin-bottom: 60px;
+    }
 }
