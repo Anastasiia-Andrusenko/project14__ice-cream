@@ -16,31 +16,25 @@
     flex-direction: column;
     width: 235px;
     margin-bottom: 42px;
+    color: $text-main-color;
+    text-transform: uppercase;
 }
 .footer-text__first{
     @include font(700, 18px, 22px);
-    text-transform: uppercase;
-    color: #FCFCFC;
     margin-bottom: 16px;
 }
 .footer-text__second{
     @include font(700, 34px, 41px, 0.04em);
-    text-transform: uppercase;
-    color: #FCFCFC;
 }
 .footer-tel__text{
-    // @include font(700, 12px, 22px, );
     text-align: right;
     color: #131313;
 
 }
 .footer-tel__link{
-    @include font(700, 12px, 22px, );
-    
+    @include font(700, 12px, 22px, );    
     text-align: right;
-    color: #fcfcfc;
-    // margin-left: auto;
-
+    color: $text-main-color;
 }
 .footer-social-tel{
     display: flex;
@@ -64,7 +58,7 @@
 .social-footer__icon{
     width: 20px;
     height: 20px;
-    fill: #fcfcfc;
+    fill: $main-color;
 }
 .social-footer__list{
     @extend %list;
@@ -74,6 +68,9 @@
     height: 32px;
     margin-left: auto;
 }
+.link {
+    text-decoration: none;
+}
 .social-footer__link{
     display: flex;
     justify-content: center;
@@ -81,12 +78,15 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color: #f8d24e;
+    background-color: $accent-color;
+   
+    &:hover .social-footer__icon,
+    &:focus .social-footer__icon{
+        fill: $second-background-color;
+    }
     
 }
-.link {
-    text-decoration: none;
-}
+
 .footer-tel{
     display: flex;
     flex-direction: row-reverse;
@@ -135,10 +135,24 @@
     .social-footer__link {       
         width: 34px;
         height: 34px;
+        &:hover{
+            width: 32px;
+            height: 32px;
+        }
+        &:focus{
+            width: 35px;
+            height: 35px;
+        }
+        &:hover .social-footer__icon{
+            width: 19px;
+            height: 19px;
+        }
+        &:focus .social-footer__icon {            
+            width: 21px;
+            height: 21px;
+        }
     }
-    .social-footer__icon {
-        fill: #84A178;
-    }
+   
     .social-footer {
         margin-bottom: 32px;
     }
