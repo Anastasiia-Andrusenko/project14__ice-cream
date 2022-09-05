@@ -5,47 +5,10 @@
 
 .title-btn__list {
     display: flex;
+    align-items: baseline;
     @extend %list;
 }
 
-
-.btn-transparent {
-
-    background-color: transparent;
-  color: $accent-color;
-  text-decoration:underline;
-  
-  transition: color 300ms $cubic-bezier;
-
-  @media screen and (max-width: 1199px){
-    font-weight: 600;
-        font-size: 14px;
-        line-height: 1.25;
-  }
-
-  &:hover {
-    color: $hover-color;
-  }
-  &:focus {
-    color: $hover-color;
-    font-weight: 600;
-        font-size: 9px;
-        line-height: 1.22;
-  }
-  &:disabled {
-    color: $disabled-color;
-  }
-
-  @media screen and (min-width: $desktop) {
-    &:focus {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.21;
-    }
-  }
-
-    
-}
 
 
 @media screen and (max-width: 767px) {
@@ -303,38 +266,6 @@
     margin-right: 8px;
     margin-bottom: 28px;
 }
-
-
-.btn-border {
-    background-color: transparent;
-  border: 2px solid $accent-color;
-
-  text-align: center;
-
-  transition: border 300ms $cubic-bezier;
-
-  &:hover {
-    border: 2px solid $hover-color;
-  }
-
-  &:focus {
-    font-weight: 600;
-        font-size: 11px;
-        line-height: 1.22;
-    border: 2px solid $hover-color;
-  }
-
-  &:disabled {
-    border: 2px solid $disabled-color;
-  }
-
-  padding: 4px 9px;
-    border-radius: 8px;
-    font-weight: 600;
-        font-size: 8px;
-        line-height: 1.25;
-}
-
 
 
 
