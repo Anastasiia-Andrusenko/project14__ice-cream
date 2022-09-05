@@ -3,14 +3,14 @@
     <div class="header-right">
     <!-- навігація -->
     <nav class="page-nav">
-      <!-- <a class="logo" href="./">
-        <img src="./images/hero/logo.png" alt="Ice Cream">
-      </a> -->
       <a class="logo" href="./">
+        <img src="./images/hero/logo.png" alt="Ice Cream">
+      </a>
+      <!-- <a class="logo" href="./">
         <svg class="logo__img">
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
-      </a>
+      </a> -->
       <!-- меню -->
       <ul class="menu list">
         <li class="menu__item">
@@ -47,31 +47,33 @@
 
   <!-- мобільне меню -->
   <div class="mobile-menu js-mobile-menu" id="mobile-menu">
-    <div class="container mobile-menu__container">
+    <div class="mobile-menu__container">
       <!-- <div class="mobile-menu__header"> -->
-        
+        <div class="mobile-header">
         <a class="logo_mobile-menu" href="./" >
 
+
           <svg class="logo_mobile-menu-icon">
+
+          <!-- <svg class="logo_mobile-menu-icon" width="40" height="37">
+
             <use href="./images/sprite.svg#icon-logo"></use>
-          </svg>
-          <!-- <img src="./images/logo.png" alt="Ice Cream"> -->
+          </svg> -->
+          <img src="./images/logo.png" alt="Ice Cream">
         </a>
         <button class="mobile-menu__close-btn js-mobile-menu__close-btn">
           <!-- <img src="./images/hero/close.png" width="19" height="19"> -->
-          <svg class="mobile-menu__close-icon" width="19" height="19">
-            <use href="./images/sprite.svg#icon-close"></use>
+          <svg class="mobile-menu__close-icon" width="32" height="32">
+            <use href="./images/sprite.svg#icon-close_40px"></use>
           </svg>
         </button>
+      </div>
 
       <!-- </div> -->
      
       <ul class="mobile-menu__list list">
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#hero">Home</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#about-us">About us</a>
         </li>
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#how-made">How it's made?</a>
@@ -84,7 +86,11 @@
         </li>
         
       </ul>
-      <button class="button-hero--mobile" type="button">Buy now</button>
+      <button class="button-hero--mobile btn-fil" type="button">Buy now
+        <!-- <svg class="button-hero--mobile__icon">
+          <use href="./images/sprite.svg#icon-clip"></use>
+        </svg> -->
+      </button>
     </div>
   </div>
 </header>
@@ -100,11 +106,11 @@
         <!-- посилання під title -->
         <ul class="title-btn__list list">
           <li class="title-btn__item">
-            <button class="title-btn__link--left" type="button" href="#products">Products</button>
+            <button class="title-btn__link--left btn-border" type="button" href="#products">Products</button>
             <!-- <a class="title-btn__link--left link" href="#products">Products</a> -->
           </li>
           <li class="title-btn__item">
-            <button class="title-btn__link--left" type="button" href="#how-made">How it's made?</button>
+            <button class="title-btn__link--left btn-transparent" type="button" href="#how-made">How it's made?</button>
             <!-- <a class="title-btn__link--right link" href="#how-made">How it's made?</a> -->
           </li>
           </ul>

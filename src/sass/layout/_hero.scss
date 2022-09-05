@@ -9,6 +9,45 @@
 }
 
 
+.btn-transparent {
+
+    background-color: transparent;
+  color: $accent-color;
+  text-decoration:underline;
+  
+  transition: color 300ms $cubic-bezier;
+
+  @media screen and (max-width: 1199px){
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 1.25;
+  }
+
+  &:hover {
+    color: $hover-color;
+  }
+  &:focus {
+    color: $hover-color;
+    font-weight: 600;
+        font-size: 9px;
+        line-height: 1.22;
+  }
+  &:disabled {
+    color: $disabled-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:focus {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+  }
+
+    
+}
+
+
 @media screen and (max-width: 767px) {
 
     .hero {
@@ -37,7 +76,7 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-image: url('../images/hero/ice-cream-mobile.png');
-    background-position: left 68px top 67px;
+    background-position: left 53px top 90px;
     filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
     z-index: 10;
 
@@ -62,7 +101,7 @@
     background-size: auto;
     background-image: url('../images/hero/face-yellow-mobile.png'), url('../images/hero/face-pink-mobile.png'), url('../images/hero/face-pink-mobile.png');
 
-    background-position: left 41% top 25%, left 70% top 16%, left 75% top 34%;
+    background-position: left 38% top 30%, left 66% top 21%, left 70% top 39%;
     z-index: 15;
     width: 270px;
     height: 500px;
@@ -227,6 +266,7 @@
 
 
 
+
 .network-list {
     width: 46px;
     margin-top: 26px;
@@ -263,6 +303,41 @@
     margin-right: 8px;
     margin-bottom: 28px;
 }
+
+
+.btn-border {
+    background-color: transparent;
+  border: 2px solid $accent-color;
+
+  text-align: center;
+
+  transition: border 300ms $cubic-bezier;
+
+  &:hover {
+    border: 2px solid $hover-color;
+  }
+
+  &:focus {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.22;
+    border: 2px solid $hover-color;
+  }
+
+  &:disabled {
+    border: 2px solid $disabled-color;
+  }
+
+  padding: 4px 9px;
+    border-radius: 8px;
+    font-weight: 600;
+        font-size: 8px;
+        line-height: 1.25;
+}
+
+
+
+
 
 .plate-ice {
     width: 100%;
