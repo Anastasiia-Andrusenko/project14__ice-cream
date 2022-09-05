@@ -5,11 +5,24 @@
   z-index: 1000;
   height: 100%;
   width: 100%;
+  opacity: 1;
   background-color: $main-color;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
+
+.backdrop.is-hidden .franchise {
+	transform: scale(1.15);
+}
+
 .franchise {
   position: relative;
   border: 2px solid #f8d24e;
@@ -17,6 +30,7 @@
   padding: 28px;
   max-width: 280px;
   background-color: $second-background-color;
+  
   &__header {
     font-family: 'Seymour One';
     @include font(400, 16px, 24px, normal);
@@ -111,5 +125,13 @@
       top: 20px;
       right: 20px;
     }
+  }
+
+  .franchise__close {
+    cursor: pointer;
+    &:hover {
+      fill: $hover-color;
+    }
+    
   }
 }
