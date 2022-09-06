@@ -1,37 +1,39 @@
 <header>
   <div class="container page-header-container">
     <div class="header-right">
-      <!-- навігація -->
-      <nav class="page-nav">
-        <a class="logo" href="./">
-          <img src="./images/hero/logo.png" alt="Ice Cream" />
-        </a>
-        <!-- <a class="logo" href="./">
+    <!-- навігація -->
+    <nav class="page-nav">
+      <a class="logo" href="./">
+        <img src="./images/hero/logo.png" alt="Ice Cream">
+      </a>
+      <!-- <a class="logo" href="./">
         <svg class="logo__img">
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </a> -->
-        <!-- меню -->
-        <ul class="menu list">
-          <li class="menu__item">
-            <a class="menu__link link" href="#hero">Home</a>
-          </li>
-          <!-- <li class="menu__item">
+      <!-- меню -->
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link link" href="#hero">Home</a>
+        </li>
+        <!-- <li class="menu__item">
           <a class="menu__link link" href="#about-us">About us</a>
         </li> -->
-          <li class="menu__item">
-            <a class="menu__link link" href="#how-made">How it's made?</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#products">Our products</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <li class="menu__item">
+          <a class="menu__link link" href="#how-made">How it's made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#products">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
     <div class="header-left">
+
       <!-- кнопка "бургер" для мобільної і планшетної версії -->
       <button
         type="button"
@@ -39,34 +41,32 @@
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg class="mobile-menu-open__icon" width="20" height="12">
+        <svg class="mobile-menu-open__icon" width="20" height="20">
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
 
-      <!-- кнопка в хедері для десктопної і планшетної версії -->
-      <button class="button-hero btn btn-fill" type="button" data-buy-open>
-        Buy now
-      </button>
-    </div>
+    <!-- кнопка в хедері для десктопної і планшетної версії -->
+    <button class="button-hero" type="button"  data-modal-open>Buy now</button>
+  </div>
   </div>
 
   <!-- мобільне меню -->
+  <nav>
   <div class="mobile-menu js-mobile-menu" id="mobile-menu">
     <div class="mobile-menu__container">
       <!-- <div class="mobile-menu__header"> -->
-      <div class="mobile-header">
-        <a class="logo_mobile-menu" href="./">
+        <div class="mobile-header">
+        <a class="logo_mobile-menu" href="./" >
+
+
           <!-- <svg class="logo_mobile-menu-icon"> -->
 
           <!-- <svg class="logo_mobile-menu-icon" width="40" height="37">
 
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg> -->
-
-          </svg>
-
-          <img src="./images/logo.png" alt="Ice Cream" />
+          <img src="./images/logo.png" alt="Ice Cream">
         </a>
         <button class="mobile-menu__close-btn js-mobile-menu__close-btn">
           <!-- <img src="./images/hero/close.png" width="19" height="19"> -->
@@ -77,7 +77,7 @@
       </div>
 
       <!-- </div> -->
-
+     
       <ul class="mobile-menu__list list">
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#hero">Home</a>
@@ -91,19 +91,22 @@
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#contact">Contact</a>
         </li>
+        
       </ul>
-      <button class="button-hero--mobile btn-fill" type="button">
-        Buy now
+      <button class="button-hero--mobile btn-fill" type="button">Buy now
         <!-- <svg class="button-hero--mobile__icon">
           <use href="./images/sprite.svg#icon-clip"></use>
         </svg> -->
       </button>
     </div>
   </div>
+</nav>
 </header>
+
 
 <section class="hero">
   <div class="container hero-container">
+
     <!-- ліва сторона hero  -->
     <div class="hero-left-side">
       <h1 class="title" lang="en">
@@ -111,87 +114,74 @@
         ><span class="title-big-fonts">passion</span>
       </h1>
 
-      <!-- посилання під title -->
-      <ul class="title-btn__list list">
-        <li class="title-btn__item">
-          <button
+        <!-- посилання під title -->
+        <ul class="title-btn__list list">
+          <li class="title-btn__item">
+            <button class="title-btn__link--left btn-border" type="button" href="#products">Products</button>
+            
+          </li>
+          <li class="title-btn__item">
+            <button class="title-btn__link--right btn-transparent" type="button" href="#how-made">How it's made?</button>
+            
+          </li>
+          </ul>
+        
+          <div class="hero-description">
+             <!-- текст на hero -->
 
-            class="title-btn__link--left btn-border"
-
-            class="title-btn__link--left btn btn-border"
-
-            type="button"
-            href="#products"
-          >
-            Products
-          </button>
-
-        </li>
-        <li class="title-btn__item">
-          <button
-            class="title-btn__link--right btn-transparent"
-
-          <!-- <a class="title-btn__link--left link" href="#products">Products</a> -->
-        </li>
-        <li class="title-btn__item">
-          <button
-            class="title-btn__link--left btn-transparent"
-
-            type="button"
-            href="#how-made"
-          >
-            How it's made?
-          </button>
-
-
-          <!-- <a class="title-btn__link--right link" href="#how-made">How it's made?</a> -->
-
-        </li>
-      </ul>
-
-      <div class="hero-description">
-        <!-- текст на hero -->
-
-        <div class="plate-ice">
-          <div class="plate-ice__img"></div>
-        </div>
+             <div class="plate-ice">
+              <div class="plate-ice__img"></div>
+            </div>
         <div class="hero-description__block">
+
           <p class="hero-description__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
           <!-- кнопка під текстом -->
           <button class="hero-description__btn">
-            <svg class="hero-description__btn-icon" width="40" height="20">
-              <use href="./images/sprite.svg#icon-arrow"></use>
+            <svg class="hero-description__btn-icon" width="40" height="15">
+              <use href="./images/products/product_sprite.svg#icon-Arrow-1"></use>
             </svg>
           </button>
-        </div>
-      </div>
-    </div>
 
-    <!-- права сторона hero -->
-    <div class="hero-right-side">
-      <div class="face-img"></div>
-
-      <div class="big-ice">
-        <div class="big-ice__img">
-          <div class="face-yelloe"></div>
-          <div class="face-green"></div>
-          <div class="face-pink"></div>
         </div>
+                  </div>
+         
+        
+         
+       
       </div>
 
-      <ul class="network-list list">
-        <li class="network-list__item">
-          <p class="network-list__total">16</p>
-          <p class="network-list__text">cafes</p>
-        </li>
-        <li class="network-list__item">
-          <p class="network-list__total">23</p>
-          <p class="network-list__text">food trucks</p>
-        </li>
-      </ul>
+
+      <!-- права сторона hero -->
+      <div class="hero-right-side">
+       
+        <div class="face-img"></div>
+        
+
+        
+        <div class="big-ice">
+          <div class="big-ice__img">
+            <div class="face-yelloe"></div>
+            <div class="face-green"></div>
+            <div class="face-pink"></div>
+          </div>
+         
+        </div>
+              
+
+        <ul class="network-list list">
+            <li class="network-list__item">
+              <p class="network-list__total">16</p>
+              <p class="network-list__text">cafes</p>
+            </li>
+            <li class="network-list__item">
+              <p class="network-list__total">23</p>
+              <p class="network-list__text">food trucks</p>
+            </li>
+          </ul>
+        </div>
     </div>
-  </div>
+  
 </section>
