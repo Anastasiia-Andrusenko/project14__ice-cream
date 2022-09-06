@@ -8,6 +8,12 @@
   background-color: $main-color;
   display: flex;
   justify-content: center;
+
+  &.is-buy-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 .buy-now {
   position: relative;

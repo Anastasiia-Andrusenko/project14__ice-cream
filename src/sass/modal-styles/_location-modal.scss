@@ -12,7 +12,7 @@
   transition: opacity 250ms linear, visibility 250ms linear;
   opacity: 1;
 
-  &.is-hidden {
+  &.is-location-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -83,17 +83,17 @@
   padding: 7px 37px;
 }
 
-@media screen and (min-width:$tablet) {
-  .contacts__modal-location{
+@media screen and (min-width: $tablet) {
+  .contacts__modal-location {
     width: 568px;
     height: 458px;
   }
-  .modalform__map--link{
+  .modalform__map--link {
     width: 448px;
     height: 260px;
-    margin-bottom: 32px
+    margin-bottom: 32px;
   }
-  .modalform__title{
+  .modalform__title {
     @include font(400, 20px, 28px);
     margin-bottom: 32px;
   }
