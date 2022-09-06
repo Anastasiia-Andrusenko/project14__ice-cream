@@ -215,15 +215,14 @@
     }
 }
 
-//тимчасові стилі для кнопки
-//замінити
 .about__button {
     display: flex;
     align-items: center;
 }
 
 .about__arrow {
-    display: inline-block;
-    margin-right: 16px;
+    display: block;
+    margin-left: 6px;
+    fill: currentColor;
 }
 
