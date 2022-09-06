@@ -39,10 +39,6 @@
   color: #7a7a7a;
 }
 
-.social-footer__icon {
-  width: 20px;
-  height: 20px;
-}
 .social-footer__list {
   @extend %list;
   display: flex;
@@ -130,6 +126,16 @@
     width: 20px;
     height: 20px;
     fill: $main-color;
+
+    .social-footer__link:hover &,
+    .social-footer__link:focus &{
+        fill: $second-background-color;
+    } 
+
+    .social-footer__link:focus & {            
+        width: 21px;
+        height: 21px;
+    }
 }
 
 .social-footer__list{
@@ -147,18 +153,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     background-color: $accent-color;
-   
-    &:hover .social-footer__icon,
-    &:focus .social-footer__icon{
-        fill: $second-background-color;
-    }
-    
-}
 
+    @media screen and (max-width: 767px){
+        width: 32px;
+        height: 32px;
+    }
+
+    &:focus{
+        width: 35px;
+        height: 35px;
+    } 
+}
 
 .link {
     text-decoration: none;
@@ -206,26 +215,6 @@
     }
     .footer-copiright__text {
         @include font(700, 14px, 26px, 0.02em);
-    }
-    .social-footer__link {       
-        width: 34px;
-        height: 34px;
-        &:hover{
-            width: 32px;
-            height: 32px;
-        }
-        &:focus{
-            width: 35px;
-            height: 35px;
-        }
-        &:hover .social-footer__icon{
-            width: 19px;
-            height: 19px;
-        }
-        &:focus .social-footer__icon {            
-            width: 21px;
-            height: 21px;
-        }
     }
    
     .social-footer {

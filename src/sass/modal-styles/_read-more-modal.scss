@@ -5,7 +5,7 @@
   z-index: 1000;
   height: 100%;
   width: 100%;
-  background-color: $main-color;
+  background-color: rgba($color: $main-color, $alpha: 0.5);
   display: flex;
   justify-content: center;
 
@@ -126,6 +126,8 @@
   width: 224px;
   height: 199px;
   margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
 
   @media screen and (min-width: $desktop) {
     & {
