@@ -32,11 +32,9 @@
 
   background-color: $second-background-color;
 
-  @media screen and (min-width: $desktop) {
-    & {
-      width: 568px;
-      height: 449px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    height: 449px;
   }
 }
 
@@ -46,7 +44,7 @@
   align-items: center;
   padding: 28px;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     & {
       padding: 32px 60px;
     }
@@ -60,14 +58,17 @@
 
   color: #000000;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     & {
       @include font(400, 20px, 28px, normal);
       margin-bottom: 32px;
     }
   }
 }
-
+.icon-close {
+  width: 9px;
+  height: 9px;
+}
 .about__close-btn {
   position: absolute;
   top: 8px;
@@ -77,36 +78,27 @@
   justify-content: center;
   align-items: center;
   border: none;
-
-  padding: 3.5px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
   background-color: transparent;
+  color: #000000;
 
-  transition: border-color 250ms linear;
-
-  @media screen and (min-width: $desktop) {
-    & {
-      padding: 4.5px;
-      top: 20px;
-      right: 20px;
-    }
-
-    .icon-close {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-.icon-close {
-  transition: fill 250ms linear;
-
-  .about__close-btn:hover &,
-  .about__close-btn:focus & {
+  transition: color 250ms $cubic-bezier;
+  &:hover .icon-close,
+  &:focus .icon-close {
     fill: $accent-color;
   }
-}
-
-.icon-close {
-  fill: #000000;
+  @media screen and (min-width: $tablet) {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    .icon-close {
+      width: 11px;
+      height: 11px;
+    }
+  }
 }
 
 .about__text-modal {
@@ -114,7 +106,7 @@
   color: $text-second-color;
   min-width: 224px;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     & {
       min-width: 448px;
       @include font(400, 16px, 22px, normal);
@@ -129,7 +121,7 @@
   border: none;
   border-radius: 10px;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     & {
       width: 448px;
       height: 205px;

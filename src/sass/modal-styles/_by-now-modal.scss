@@ -8,6 +8,7 @@
   background-color: rgba($color: $main-color, $alpha: 0.5);
   display: flex;
   justify-content: center;
+  transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
 
   &.is-buy-hidden {
     opacity: 0;
@@ -81,16 +82,21 @@
     background-color: transparent;
     height: 16px;
     width: 16px;
-    padding: 3px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color 250ms $cubic-bezier;
+    padding: 0;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
   &__close-icon {
     width: 9px;
     height: 9px;
-    fill: #000000;
+    fill: currentColor;
   }
 }
 .checkbox {
@@ -237,6 +243,7 @@
     max-height: 644px;
     padding: 32px 54px;
     &__header {
+      @include font(400, 20px, 28px, normal);
       margin-bottom: 40px;
     }
     &__label {
@@ -272,7 +279,6 @@
     &__close-icon {
       width: 16px;
       height: 16px;
-      fill: #000000;
     }
   }
   .label__wrapper {

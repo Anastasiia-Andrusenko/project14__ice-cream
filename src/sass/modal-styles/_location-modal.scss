@@ -8,14 +8,17 @@
   background-color: rgba($color: $main-color, $alpha: 0.5);
   display: flex;
   justify-content: center;
+  transform: scale(1);
 
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    transform 250ms linear;
   opacity: 1;
 
   &.is-location-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transform: scale(1);
   }
 }
 .contacts__modal-location {
@@ -63,15 +66,16 @@
   justify-content: center;
   align-items: center;
   border: none;
+  padding: 0;
 
-  padding: 4.5px;
   background-color: transparent;
 
   transition: border-color 250ms linear;
 }
 .icon-close {
+  width: 11px;
+  height: 11px;
   transition: fill 250ms linear;
-
   .modal__close-btn:hover &,
   .modal__close-btn:focus & {
     fill: $accent-color;
