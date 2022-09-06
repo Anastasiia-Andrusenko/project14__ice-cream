@@ -72,6 +72,18 @@
 
         @include font (400, 36px, 45px, 0.06em);
     }
+
+    &--mobile {
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &--tablet {
+        @media screen and (max-width: calc($tablet - 1px)) {
+            display: none;
+        }
+    }
 }
 
 .about__flex-container {
@@ -81,6 +93,10 @@
 
     @media screen and (min-width: $tablet) {
         flex-direction: row;
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: $desktop) {
         align-items: center;
     }
 }
@@ -91,7 +107,7 @@
     border-radius: 50%;
 
     @media screen and (max-width: calc($tablet - 1px)) {
-        margin-bottom: 40px;
+        margin-bottom: 65px;
         width: 278px;
         height: 278px;
     }
@@ -132,7 +148,6 @@
 
         width: 330px;
         height: 330px;
-        
     }
 
     @media screen and (min-width: $desktop) {
@@ -165,13 +180,13 @@
     }
 
     @media screen and (min-width: $tablet) {
-        // padding-top: 39px;
         margin-bottom: 48px;
     }
 
-    // @media screen and (min-width: $desktop) {
-    //     padding-top: 39px;
-    // }
+    @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+        padding-top: 39px;
+    }
+
 }
 
 .about__paragraph {
@@ -197,7 +212,6 @@
             @include font (400, 16px, 28px, 0.04em);
         }
     }
-
     // margins between paragraphs
     &:not(:last-child) {
         margin-bottom: 4px;
@@ -215,8 +229,6 @@
     }
 }
 
-//тимчасові стилі для кнопки
-//замінити
 .about__button {
     display: flex;
     align-items: center;
