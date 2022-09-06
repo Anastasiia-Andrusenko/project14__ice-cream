@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-    max-width: 480px;
+    // max-width: 480px;
     // justify-content: space-between;
 
   }
@@ -68,6 +68,9 @@
         display: none;
       }
 
+
+
+    
 
     
 
@@ -137,7 +140,7 @@
     .mobile-menu__close-btn {
         position: absolute;
         top: 16px;
-        right: 20px;
+        right: 26px;
     
       
         background-color: transparent;
@@ -180,18 +183,35 @@
         
     }
 
+    .mobile-menu-open {
+
+        margin-right: 8px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+           
+        
+        width: 32px;
+        height: 32px;
+
+        
+
+    }
+
 
     .page-header-container {
-        padding: 12px 20px;
+        padding: 12px 22px;
         justify-content: space-between;
         max-width: 100%;
     }
 
 
     .button-hero--mobile {
-        margin-bottom: 51px;
+        // margin-bottom: 51px;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 63px;
+        padding: 12px 37px;
 
         width: 152px;
         height: 42px;
@@ -222,6 +242,20 @@
     }
 
 
+    .title-btn__link--left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
+        height: 24px;
+        @include font (600, 8px, 10px, 0.02em);
+
+        &:focus {
+
+            color: #FFFFFF;
+            font-size: 8px;
+        }
+    }
 
 }
 
@@ -367,6 +401,16 @@
     .mobile-menu-open {
 
         margin-right: 38px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+           
+        
+        width: 32px;
+        // height: 32px;
+
+        
 
     }
 
@@ -375,7 +419,7 @@
         padding: 20px 32px;
         justify-content: space-between;
         width: 100%;
-        max-width: 767px;
+        // max-width: 767px;
       
     }
 
@@ -468,19 +512,7 @@
 
 }
 
-  .mobile-menu-open {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-    margin-right: 8px;
-
-    width: 32px;
-    height: 32px;
-    
-
-   
-  }
+ 
 
 
 
