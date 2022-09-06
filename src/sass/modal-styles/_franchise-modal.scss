@@ -10,17 +10,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
+  transform: scale(1);
+  transition: opacity 250ms $cubic-bezier, visibility 450ms $cubic-bezier,
+    transform 950ms $cubic-bezier;
 
   &.is-franchise-hidden {
     visibility: hidden;
     opacity: 0;
+    transform: rotate(360deg);
     pointer-events: none;
+    transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
   }
 }
 
 .backdrop.is-franchise-hidden .franchise {
-  transform: scale(1.15);
+  transform: scale(0.25);
+  transition: transform 250ms $cubic-bezier;
 }
 
 .franchise {
@@ -83,10 +88,14 @@
     align-items: center;
     padding: 0;
     background-color: transparent;
+    transition: color 250ms $cubic-bezier;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
   &__close-icon {
-    fill: #000000;
-
+    fill: currentColor;
     width: 11px;
     height: 11px;
   }
