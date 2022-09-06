@@ -1,0 +1,137 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+
+  transition: opacity 250ms linear, visibility 250ms linear;
+  opacity: 1;
+
+  &.is-about-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.about__modal-read {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 280px;
+  height: 459px;
+
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  background-color: $second-background-color;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      width: 568px;
+      height: 449px;
+    }
+  }
+}
+
+.about__modalform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      padding: 32px 60px;
+    }
+  }
+}
+.about__title-modal {
+  font-family: 'Seymour One';
+  @include font(400, 16px, 24px, normal);
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: #000000;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      @include font(400, 20px, 28px, normal);
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.about__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  padding: 3.5px;
+  background-color: transparent;
+
+  transition: border-color 250ms linear;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      padding: 4.5px;
+      top: 20px;
+      right: 20px;
+    }
+
+    .icon-close {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.icon-close {
+  transition: fill 250ms linear;
+
+  .about__close-btn:hover &,
+  .about__close-btn:focus & {
+    fill: $accent-color;
+  }
+}
+
+.icon-close {
+  fill: #000000;
+}
+
+.about__text-modal {
+  @include font(400, 14px, 20px, normal);
+  color: $text-second-color;
+  min-width: 224px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      min-width: 448px;
+      @include font(400, 16px, 22px, normal);
+    }
+  }
+}
+
+.about_video-modal {
+  width: 224px;
+  height: 199px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      width: 448px;
+      height: 205px;
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -12,14 +12,14 @@
   align-items: center;
   transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
 
-  &.is-hidden {
+  &.is-franchise-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
   }
 }
 
-.backdrop.is-hidden .franchise {
+.backdrop.is-franchise-hidden .franchise {
   transform: scale(1.15);
 }
 
