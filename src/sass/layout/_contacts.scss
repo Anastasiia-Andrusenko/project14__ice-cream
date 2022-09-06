@@ -106,32 +106,24 @@ height: 42px;
   }
 }
 .contacts__btn--franchise {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-width: 196px;
-height: 42px;
-
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 42px;
   padding: 10px 46px;
   border-radius: 10px;
 
   @include font(600, 14px, 18px);
 
   &:hover {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-
-    color: black;
     padding: 10px 46px;
     border-radius: 10px;
 
     @include font(600, 14px, 18px);
   }
   &:focus {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
 
-    color: black;
     padding: 10px 46px;
     border-radius: 10px;
 

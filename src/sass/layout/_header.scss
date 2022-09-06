@@ -167,7 +167,6 @@
 @media screen and (max-width: 767px) {
     .button-hero {
         display: none;
-        
     }
 
     .mobile-menu-open {
@@ -207,12 +206,13 @@
 
     .button-hero--mobile {
         // margin-bottom: 51px;
-        display: block;
-        margin: 0 auto 63px;
-        padding: 12px 37px;
 
-        width: 152px;
-        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 63px;
+        padding: 12px 34px;
+
         border-radius: 10px;
         border: none;
         background-color: $accent-color;
@@ -266,11 +266,14 @@
 
     .button-hero {
         margin-bottom: 51px;
-        display: block;
         margin: 0 auto;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 152px;
-        height: 42px;
+        // height: 42px;
+
         border-radius: 10px;
         border: none;
         background-color: $accent-color;
@@ -388,10 +391,6 @@
            
         
         width: 32px;
-      
-
-        
-
     }
 
 
@@ -399,9 +398,7 @@
         padding: 20px 32px;
         justify-content: space-between;
         width: 100%;
-        display: flex;
-
-      
+        display: flex;      
     }
 
     .header-container {

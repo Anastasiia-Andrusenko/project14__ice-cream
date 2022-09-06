@@ -19,7 +19,6 @@
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
-
     </div>
 
       <!-- меню -->
@@ -40,16 +39,14 @@
         </li>
       </ul>
     </nav>
- 
+   
   </div>
-
-
-
-      
-
     <!-- кнопка в хедері для десктопної і планшетної версії -->
-    <button class="button-hero" type="button"  data-buy-open>Buy now</button>
-  <!-- </div> -->
+    <button class="btn btn-fill button-hero" type="button"  data-buy-open>Buy now
+      <svg class="about__arrow" width="12" height="12">
+        <use href="./images/sprite.svg#icon-small-arrow-btn"></use>
+      </svg>
+    </button>
   </div>
 
   <!-- мобільне меню -->
@@ -60,19 +57,13 @@
         <use href="./images/sprite.svg#icon-close_40px"></use>
       </svg>
     </button>
-   
     <div class="mobile-menu__container">
       <div class="mobile-header">
         <a class="logo_mobile-menu" href="./" >
-
           <img src="./images/logo.png" alt="Ice Cream">
         </a>
-       
       </div>
-
-      <nav class="mobile-nav-container"> 
-
-
+    <nav class="mobile-nav-container"> 
       <ul class="mobile-menu__list list">
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#hero">Home</a>
@@ -86,14 +77,17 @@
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#contact">Contact</a>
         </li>
-        
       </ul>
     </nav>
-      <button class="button-hero--mobile btn-fill" type="button" data-buy-open>Buy now</button>
+      <button class="button-hero--mobile btn btn-fill" 
+        type="button" data-buy-open>Buy now
+        <svg class="about__arrow" width="12" height="12">
+          <use href="./images/sprite.svg#icon-small-arrow-btn"></use>
+        </svg>
+      </button>
     </div>
-  </nav>
+  </div>  
 </header>
-
 <section class="hero">
   <div class="container hero-container">
     <!-- ліва сторона hero  -->
@@ -107,69 +101,57 @@
       <ul class="title-btn__list list">
         <li class="title-btn__item">
           <button
-            class="title-btn__link--left btn-border"
+            class="title-btn__link--left btn btn-border"
             type="button"
-            href="#products"
           >
             Products
           </button>
         </li>
         <li class="title-btn__item">
           <button
-            class="title-btn__link--right btn-transparent"
+            class="btn btn-transparent"
             type="button"
-            href="#how-made"
           >
             How it's made?
           </button>
         </li>
       </ul>
-
       <div class="hero-description">
         <!-- текст на hero -->
-
         <div class="plate-ice">
           <div class="plate-ice__img"></div>
         </div>
         <div class="hero-description__block">
-          <p class="hero-description__text">
+            <p class="hero-description__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
-          </p>
-          <!-- кнопка під текстом -->
-          <button class="hero-description__btn">
-            <svg class="hero-description__btn-icon" width="40" height="15">
+            </p>
+            <!-- кнопка під текстом -->
+            <button class="hero-description__btn">
+            <svg class="hero-description__btn-icon" 
+              width="40" 
+              height="15">
               <use
                 href="./images/products/product_sprite.svg#icon-Arrow-1"
               ></use>
             </svg>
-          </button>
-           </div>
+            </button>
         </div>
       </div>
     </div>
-
     <!-- права сторона hero -->
     <div class="hero-right-side">
       <div class="face-img"></div>
-
-      <div class="big-ice">
-        <div class="big-ice__img">
-          <div class="face-yelloe"></div>
-          <div class="face-green"></div>
-          <div class="face-pink"></div>
-        </div>
-      </div>
-
+      <div class="big-ice"></div>
       <ul class="network-list list">
-        <li class="network-list__item">
-          <p class="network-list__total">16</p>
-          <p class="network-list__text">cafes</p>
-        </li>
-        <li class="network-list__item">
-          <p class="network-list__total">23</p>
-          <p class="network-list__text">food trucks</p>
-        </li>
+          <li class="network-list__item">
+            <p class="network-list__total">16</p>
+            <p class="network-list__text">cafes</p>
+          </li>
+          <li class="network-list__item">
+            <p class="network-list__total">23</p>
+            <p class="network-list__text">food trucks</p>
+          </li>
       </ul>
     </div>
   </div>

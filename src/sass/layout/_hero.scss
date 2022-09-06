@@ -8,9 +8,7 @@
     @extend %list;
 }
 
-
 .btn-transparent {
-
     background-color: transparent;
     color: $accent-color;
     text-decoration:underline;
@@ -26,6 +24,7 @@
   &:hover {
         color: $hover-color;
   }
+
   &:focus {
         color: #FFFFFF;
         font-weight: 600;
@@ -42,14 +41,10 @@
         font-size: 14px;
         line-height: 1.21;
     }
-  }
-
-    
+  }  
 }
 
-
 @media screen and (max-width: 767px) {
-
     .hero {
         height: 450px;
         
@@ -59,109 +54,82 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
-        
-}
+    }
 
+    .hero-container {
+        width: 320px;
+        height: 502px;
+    }
 
-.hero-container {
-    width: 320px;
-    height: 502px;
+    .big-ice {
+        position: absolute;
+        width: 270px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url('../images/hero/ice-cream-mobile.png');
+        background-position: left 53px top 80px;
+        filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
+        z-index: 10;
+        ////////////////////////Anamation-big-ice/////////////////////
+        // animation-name: blinker;
+        // animation-iteration-count: 4;
+        // animation-timing-function: $cubic-bezier;
+        // animation-duration: 600ms;
+    }
+        // @keyframes blinker {
+        //     from { opacity: 1.0; }
+        //     to { opacity: 0.0; }
+        //   }
+
+    .face-img {
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url('../images/hero/face-yellow-mobile.png'), url('../images/hero/face-pink-mobile.png'), url('../images/hero/face-pink-mobile.png');
     
-}
+        background-position: left 38% top 30%, left 66% top 21%, left 70% top 39%;
+        z-index: 15;
+        width: 270px;
+        height: 500px;
+        position: absolute;
+    }
 
-.big-ice {
-    position: absolute;
-    width: 270px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-image: url('../images/hero/ice-cream-mobile.png');
-    background-position: left 53px top 87px;
-    filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
-    z-index: 10;
-
-
-    ////////////////////////Anamation-big-ice/////////////////////
-    // animation-name: blinker;
-    // animation-iteration-count: 4;
-    // animation-timing-function: $cubic-bezier;
-    // animation-duration: 600ms;
-
-}
-
-// @keyframes blinker {
-//     from { opacity: 1.0; }
-//     to { opacity: 0.0; }
-//   }
-
-
-
-.face-img {
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-image: url('../images/hero/face-yellow-mobile.png'), url('../images/hero/face-pink-mobile.png'), url('../images/hero/face-pink-mobile.png');
-
-    background-position: left 38% top 30%, left 66% top 21%, left 70% top 39%;
-    z-index: 15;
-    width: 270px;
-    height: 500px;
-    position: absolute;
-
-   
-
-}
-
-
-
-.title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    text-transform: uppercase;
-    color: $text-main-color;
-
-    margin-top: 58px;
-    margin-bottom: 32px;
-
-}
-
-.title-small-fonts {
-    @include font (400, 26px, 33px, 0.04em);
-
-}
-
-.title-big-fonts {
-
+    .title {
+        font-family: 'Seymour One';
+        font-style: normal;
+        text-transform: uppercase;
+        color: $text-main-color;
     
-    @include font (400, 34px, 33px, 0.04em);
+        margin-top: 58px;
+        margin-bottom: 32px;
+    }
+
+    .title-small-fonts {
+        @include font (400, 26px, 33px, 0.04em);
+    }
     
-
-
+    .title-big-fonts {
+        @include font (400, 34px, 33px, 0.04em);
+    }
+    
+    .hero-description {
+        display: none;
+    }
+    .hero-description__btn {
+        display: none;
+    }
+    
+    .network-list {
+        display: none;
+    }
+    
+    .title-btn__item {
+        margin-right: 8px;
+    }
 }
-
-.hero-description {
-    display: none;
-
-}
-.hero-description__btn {
-    display: none;
-}
-
-.network-list {
-    display: none;
-}
-
-.title-btn__item {
-    margin-right: 8px;
-   
-}
-
-}
-
 
 @media screen and (min-width: 768px) {
-
     .hero {
-
         position: relative;
         height: 385px;
         width: 100%;
@@ -169,305 +137,252 @@
         background-image: url('../images/hero/point-tablet.png');
         background-size: contain;
         background-position: bottom;        
-        
+    }
       
-        }
-
-        
-.hero-container {
-    width: 100%;
-    height: 385px;
-    display: flex;
+    .hero-container {
+        width: 100%;
+        height: 385px;
+        display: flex;
+    }
     
-}
-
-.hero-left-side {
-    width: 50%;
-}
-
-
-.hero-right-side {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-}
-
-.big-ice {
-    position: absolute;
-    width: 350px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-image: url('../images/hero/ice-cream-tablet.png');
-    background-position: left 23px top 62px;
-    filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
-    z-index: 10;
-
-    ////////////////////////Anamation-big-ice/////////////////////
-//     animation-name: blinker;
-//     animation-iteration-count: 4;
-//     animation-timing-function: $cubic-bezier;
-//     animation-duration: 600ms;
-
-}
-
-// @keyframes blinker {
-//     from { opacity: 1.0; }
-//     to { opacity: 0.0; }
-//   }
-
-
-.face-img {
-
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-image: url('../images/hero/face-yellow-tablet.png'), url('../images/hero/face-green-tablet.png'), url('../images/hero/face-pink-tablet.png');
-
-    background-position: left 5% top 31%, left 55% top 15%, left 58% top 48%;
-    z-index: 15;
-    width: 300px;
-    height: 500px;
+    .hero-left-side {
+        width: 50%;
+    }
     
-
-   
-
-}
-
-.title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    text-transform: uppercase;
-    color: $text-main-color;
-
-    margin-top: 36px;
-    margin-bottom: 20px;
-
-
-    width: 181px;
-
-}
-
-.title-small-fonts {
-    @include font (400, 18px, 23px, 0.04em);
-
-}
-
-.title-big-fonts {
-
+    .hero-right-side {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+    }
     
-    @include font (400, 24px, 13px, 0.04em);
+    .big-ice {
+        position: absolute;
+        // bottom: 0;
+        // right: 0;
+        width: 350px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url('../images/hero/ice-cream-tablet.png');
+        background-position: left 23px top 62px;
+        filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
+        z-index: 10;
     
-
-
-}
-
-
-
-
-.network-list {
-    width: 46px;
-    margin-top: 26px;
-}
-
-.network-list__item {
-    margin-bottom: 20px;
-}
-
-.network-list__total{
-    font-family: 'Montserrat';
-    @include font (900, 28px, 34px, 0.04em);
-    text-align: right;
-    text-transform: uppercase;
-    color: #000000;
-    margin-bottom: 4px;
+        ////////////////////////Anamation-big-ice/////////////////////
+    //     animation-name: blinker;
+    //     animation-iteration-count: 4;
+    //     animation-timing-function: $cubic-bezier;
+    //     animation-duration: 600ms;
+    }
+    // @keyframes blinker {
+    //     from { opacity: 1.0; }
+    //     to { opacity: 0.0; }
+    //   }
     
-}
+    .face-img {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url('../images/hero/face-yellow-tablet.png'), url('../images/hero/face-green-tablet.png'), url('../images/hero/face-pink-tablet.png');
+    
+        background-position: left 5% top 31%, left 55% top 15%, left 58% top 48%;
+        z-index: 15;
+        width: 300px;
+        height: 500px;
+    }
+    
+    .title {
+        font-family: 'Seymour One';
+        font-style: normal;
+        text-transform: uppercase;
+        color: $text-main-color;
+    
+        margin-top: 36px;
+        margin-bottom: 20px;
+    
+        width: 181px;
+    }
 
-.network-list__text {
-    display: flex;
-
-    justify-content: flex-end;
-
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: right;
-    color: #FFFFFF;
-}
-
-
-.title-btn__item {
-    margin-right: 8px;
-    margin-bottom: 28px;
-}
-
-
-.btn-border {
-    background-color: transparent;
-    border: 2px solid $accent-color;
-
-    text-align: center;
-
-    transition: border 300ms $cubic-bezier;
-
-  &:hover {
-    border: 2px solid $hover-color;
-  }
-
-  &:focus {
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 1.22;
+    .title-small-fonts {
+        @include font (400, 18px, 23px, 0.04em);
+    }
+    
+    .title-big-fonts {
+        @include font (400, 24px, 13px, 0.04em);
+    }
+    
+    .network-list {
+        width: 46px;
+        margin-top: 26px;
+    }
+    
+    .network-list__item {
+        margin-bottom: 20px;
+    }
+    
+    .network-list__total{
+        font-family: 'Montserrat';
+        @include font (900, 28px, 34px, 0.04em);
+        text-align: right;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 4px;
+    }
+    
+    .network-list__text {
+        display: flex;
+        justify-content: flex-end;
+    
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+        color: #FFFFFF;
+    }
+    
+    .title-btn__item {
+        margin-right: 8px;
+        margin-bottom: 28px;
+    }
+    
+    .btn-border {
+        background-color: transparent;
+        border: 2px solid $accent-color;
+    
+        text-align: center;
+    
+        transition: border 300ms $cubic-bezier;
+    
+      &:hover {
         border: 2px solid $hover-color;
-  }
-
-  &:disabled {
-    border: 2px solid $disabled-color;
-  }
-
-        padding: 4px 9px;
-        border-radius: 8px;
-        font-weight: 600;
-        font-size: 8px;
-        line-height: 1.25;
-}
-
-
-
-
-
-.plate-ice {
-    width: 100%;
-    height: 170px;
-    position: relative;
-    background-position: left 30px;
-    margin-right: 7px;
-
-   
-
+      }
     
-}
-
-.plate-ice__img {
-    background-image: url('../images/hero/plate-ice-tablet.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-
-    background-position: left 4px top 25px;
-    position: absolute;
-    width: 100%;
-    height: 172px;
-
-
-
-    /////////////////Animation plate///////////////////
-
-
-//     animation-name: rot;
-//     animation-duration: 600ms;
-//     animation-direction: alternate;
-//     animation-timing-function: $cubic-bezier;
-//     animation-iteration-count: 4;
-
-}
-
-// @keyframes rot {
-//     0% {
-//       transform: rotate(0deg);
-//     }
-//     50% {
-//         transform: rotate(360deg);
-//     }
-//     100% {
-//       transform: rotate(0deg);
-//     }
-//   }
-
-
-.hero-description {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-description__block {
-
-    width: 322px;
-    height: 85px;
-    margin-top: 52px;
-    margin-bottom: 20px;
+      &:focus {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.22;
+            border: 2px solid $hover-color;
+      }
     
-
-
-}
-
-
-.hero-description__text {
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
-   
-    color: #FFFFFF;
-    margin-bottom: 10px;
-    width: 151px;
-    height: 85px;
-
+      &:disabled {
+        border: 2px solid $disabled-color;
+      }
     
-}
-
-.hero-description__btn {
-    background-color: transparent;
-}
-
-.hero-description__btn-icon {
-    background-color: transparent;
-    fill: #FFFFFF;
-}
-
-.title-btn__link--left {
-    width: 62px;
-    height: 24px;
-
-    &:focus {
-
-        color: #FFFFFF;
-        font-size: 8px;
+            padding: 4px 9px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 1.25;
     }
-}
-
-.title-btn__link--right {
-    width: 82px;
-    height: 24px;
-
-    &:focus {
-
-        color: #FFFFFF;
-        font-size: 8px;
+    
+    .plate-ice {
+        width: 100%;
+        height: 170px;
+        position: relative;
+        background-position: left 30px;
+        margin-right: 7px;   
     }
-}
-
+    
+    .plate-ice__img {
+        background-image: url('../images/hero/plate-ice-tablet.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+    
+        background-position: left 4px top 25px;
+        position: absolute;
+        width: 100%;
+        height: 172px;
+    
+        /////////////////Animation plate///////////////////
+    
+    
+    //     animation-name: rot;
+    //     animation-duration: 600ms;
+    //     animation-direction: alternate;
+    //     animation-timing-function: $cubic-bezier;
+    //     animation-iteration-count: 4;
+    }
+    // @keyframes rot {
+    //     0% {
+    //       transform: rotate(0deg);
+    //     }
+    //     50% {
+    //         transform: rotate(360deg);
+    //     }
+    //     100% {
+    //       transform: rotate(0deg);
+    //     }
+    //   }
+    
+    .hero-description {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hero-description__block {
+    
+        width: 322px;
+        height: 85px;
+        margin-top: 52px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-description__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+       
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        width: 151px;
+        height: 85px;   
+    }
+    
+    .hero-description__btn {
+        background-color: transparent;
+    }
+    
+    .hero-description__btn-icon {
+        background-color: transparent;
+        fill: #FFFFFF;
+    }
+    
+    .title-btn__link--left {
+        width: 62px;
+        height: 24px;
+    
+        &:focus {
+    
+            color: #FFFFFF;
+            font-size: 8px;
+        }
+    }
+    
+    .title-btn__link--right {
+        width: 82px;
+        height: 24px;
+    
+        &:focus {
+            color: #FFFFFF;
+            font-size: 8px;
+        }
+    }
 }
 
 
 @media screen and (min-width: 1200px) {
-
-
     .hero {
         position: relative;
-
         height: 590px;
-        
+        width: 1200px;
 
         background-repeat: no-repeat;
         background-image: url('../images/hero/point-desktop.png');
         background-size: contain;
         background-position: bottom;        
-        width: 1200px;
         margin: 0 auto;
-      
         }
 
         .hero-container {
@@ -479,9 +394,8 @@
             max-width: 1200px;
         }
 
-
         .big-ice {
-            
+            position: absolute;
             width: 50%;
             height: 100%;
             background-repeat: no-repeat;
@@ -491,241 +405,183 @@
             filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
             z-index: 10;
 
+        // ////////////////////////Anamation-big-ice/////////////////////
+        // animation-name: blinker;
+        // animation-iteration-count: 4;
+        // animation-timing-function: $cubic-bezier;
+        // animation-duration: 600ms;
+        }
 
-// ////////////////////////Anamation-big-ice/////////////////////
-// animation-name: blinker;
-// animation-iteration-count: 4;
-// animation-timing-function: $cubic-bezier;
-// animation-duration: 600ms;
+    // @keyframes blinker {
+    //     from { opacity: 1.0; }
+    //     to { opacity: 0.0; }
+    //     }
 
-}
-
-// @keyframes blinker {
-//     from { opacity: 1.0; }
-//     to { opacity: 0.0; }
-//     }
-
-.hero-left-side {
-    width: 50%;
-}
-
-
-.hero-right-side {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    margin: 0;
-}
-
+    .hero-left-side {
+        width: 50%;
+    }
+    
+    .hero-right-side {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        margin: 0;
+    }
 
    .face-img {
-                    background-repeat: no-repeat;
-                    background-size: auto;
-                    background-image: url('../images/hero/face-yellow-desktop.png'), url('../images/hero/face-green-desktop.png'), url('../images/hero/face-pink-desktop.png');
-                    background-position: left 3% top 43%, left 60% top 9%, left 69% top 81%;
-                    z-index: 15;
-                    width: 472px;
-                    height: 500px;
-                    position: absolute;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url('../images/hero/face-yellow-desktop.png'), 
+            url('../images/hero/face-green-desktop.png'), 
+            url('../images/hero/face-pink-desktop.png');
+        background-position: left 3% top 43%, left 60% top 9%, left 69% top 81%;
+        z-index: 15;
+        width: 472px;
+        height: 500px;
+        position: absolute;
+    }
 
-                }
-
-
-                .title {
-               
-                    margin-top: 41px;
-                    margin-bottom: 28px;
-
-
-                    width: 367px;
-        
-                }
+    .title {
+        margin-top: 41px;
+        margin-bottom: 28px;
+        width: 367px;
+    }
                 
-                .title-small-fonts {
-                    @include font (400, 38px, 48px, 0.04em);
+    .title-small-fonts {
+        @include font (400, 38px, 48px, 0.04em);
+    }
         
-                }
-        
-                .title-big-fonts {
-        
-                    
-                    @include font (400, 38px, 48px, 0.04em);
-                    
-        
-        
-                }
+    .title-big-fonts {
+        @include font (400, 38px, 48px, 0.04em);
+    }
 
+    .network-list {
+        width: 79px;
+        margin-top: 56px;
+    }
 
+    .network-list__item {
+        margin-bottom: 37px;
+    }
 
-                .network-list {
-                    width: 79px;
-                    margin-top: 56px;
-                }
+    .network-list__total{
+        font-family: 'Montserrat';
+        @include font (900, 46px, 56px, 0.04em);
+    
+        text-align: right;
+        text-transform: uppercase;
+    
+         color: #000000;
+         margin-bottom: 4px;
+    }
 
-                .network-list__item {
-                    margin-bottom: 37px;
-                }
+    .network-list__text {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        text-align: right;
+        color: #FFFFFF;
+    }
 
-                .network-list__total{
-                    font-family: 'Montserrat';
-                    @include font (900, 46px, 56px, 0.04em);
-                
-                    text-align: right;
-                
-                    text-transform: uppercase;
-                
-                     color: #000000;
-                     margin-bottom: 4px;
-                    
-                }
+    .title-btn__item {
+        margin-right: 34px;
+        margin-bottom: 42px;
+    }
 
-                .network-list__text {
-                    display: flex;
+    .plate-ice {
+        width: 100%;
+        height: 225px;
+        position: relative;
+        background-position: left 30px;
+        margin-right: 14px;                    
+    }
 
-                    justify-content: flex-end;
+    .plate-ice__img {
+        background-image: url('../images/hero/plate-ice-desktop.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: left 0 top 28px;
+        position: absolute;
+        width: 270px;
+        height: 270px;
+        ////////////////////Animation plate//////////////
+        // animation-name: rot;
+        // animation-duration: 600ms;
+        // animation-direction: alternate;
+        // animation-iteration-count: 4;
+        // animation-timing-function: $cubic-bezie
+        // transform-origin:50%;
+        // animation: 600ms rot  linear;
+        // animation-iteration-count: 4;
+        // animation-timing-function: $cubic-bezier;
+    }
+        // @keyframes rot {
+        //     0% {
+        //       transform: rotate(0deg);
+        //     }
+        //     50% {
+        //         transform: rotate(360deg);
+        //     }
+        //     100% {
+        //       transform: rotate(0deg);
+        //     }
+        //   }
 
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 17px;
-                    /* identical to box height */
-                    text-align: right;
-                    color: #FFFFFF;
-                }
+    .hero-description {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .hero-description__block {
+        width: 200px;
+        height: 80px;
+        margin-top: 75px;
+        margin-bottom: 20px;                   
+    }
 
-                .title-btn__item {
-                    margin-right: 34px;
-                    margin-bottom: 42px;
-                }
+    .hero-description__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        // line-height: 140%;
+        /* or 17px */
+        color: #FFFFFF;
+        margin-bottom: 32px;
+        width: 200px;
+        height: 80px;
+    }
 
+    .hero-left-side {
+        width: 440px;
+    }
 
+    .title-btn__link--left {
+        display: block;
+        width: 134px;   
+        height: 42px;
+        padding: 12px 32px;
+        @include font (600, 14px, 18px, normal);
 
-                .plate-ice {
-                    width: 100%;
-                    height: 225px;
-                    position: relative;
-                    background-position: left 30px;
-                    margin-right: 14px;
+        &:focus {
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+    }
 
-                  
+    .title-btn__link--right {
+        display: block;
+        width: 129px;   
+        height: 42px;
+        @include font (600, 14px, 17px, 0.02em);
 
-                    
-                }
-
-                .plate-ice__img {
-                    background-image: url('../images/hero/plate-ice-desktop.png');
-                    background-size: auto;
-                    background-repeat: no-repeat;
-
-                    background-position: left 0 top 28px;
-                    position: absolute;
-                    width: 270px;
-                    height: 270px;
-
-
-                    ////////////////////Animation plate////////////////
-
-                    // animation-name: rot;
-                    // animation-duration: 600ms;
-                    // animation-direction: alternate;
-                    // animation-iteration-count: 4;
-                    // animation-timing-function: $cubic-bezier;
-
-                    // transform-origin:50%;
-                    // animation: 600ms rot  linear;
-                    // animation-iteration-count: 4;
-                    // animation-timing-function: $cubic-bezier;
-                    
-                }
-
-
-                // @keyframes rot {
-                //     0% {
-                //       transform: rotate(0deg);
-                //     }
-                //     50% {
-                //         transform: rotate(360deg);
-                //     }
-                //     100% {
-                //       transform: rotate(0deg);
-                //     }
-                //   }
-
-
-                .hero-description {
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                .hero-description__block {
-
-                    width: 200px;
-                    height: 80px;
-                    margin-top: 75px;
-                    margin-bottom: 20px;
-           
-                   
-
-
-                }
-
-
-                .hero-description__text {
-
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 19px;
-                    // line-height: 140%;
-                    /* or 17px */
-                    color: #FFFFFF;
-                    margin-bottom: 32px;
-                    width: 200px;
-                    height: 80px;
-
-                    
-                }
-
-
-                .hero-left-side {
-
-                    width: 440px;
-                }
-
-
-                .title-btn__link--left {
-
-                    display: block;
-                    width: 134px;   
-                    height: 42px;
-                    padding: 12px 34px;
-                    @include font (600, 14px, 18px, 0.02em);
-
-
-                    &:focus {
-
-                        color: #FFFFFF;
-                        font-size: 14px;
-                    }
-
-                }
-
-
-                .title-btn__link--right {
-                    display: block;
-                    width: 129px;   
-                    height: 42px;
-                    @include font (600, 14px, 17px, 0.02em);
-
-
-                    &:focus {
-
-                        color: #FFFFFF;
-                    }
-                }
-
-
-               
+        &:focus {
+            color: #FFFFFF;
+        }
+    }            
 }
 
