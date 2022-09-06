@@ -261,48 +261,36 @@
 // 0px - 1199px
 @media screen and (min-width: 768px) {
 
+//     .button-hero {
+//         margin-bottom: 51px;
+//         margin: 0 auto;
 
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: 152px;
 
-
-    .button-hero {
-        margin-bottom: 51px;
-        margin: 0 auto;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 152px;
-        // height: 42px;
-
-        border-radius: 10px;
-        border: none;
-        background-color: $accent-color;
-
-        text-align: center;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.21;
-
-
+//         border-radius: 10px;
+//         border: none;
         
 
-  transition: background-color 300ms $cubic-bezier;
+//   transition: background-color 300ms $cubic-bezier;
 
-  &:hover {
-    background-color: $hover-color;
-  }
+//   &:hover {
+//     background-color: $hover-color;
+//   }
 
-  &:focus {
-    font-weight: 600;
-        font-size: 14px;
-        line-height: 1.21;
-    background-color: $hover-color;
-  }
+// //   &:focus {
+// //     font-weight: 600;
+// //         font-size: 14px;
+// //         line-height: 1.21;
+// //     background-color: $hover-color;
+// //   }
 
-  &:disabled {
-    background-color: $disabled-color;
-  }
-    }
+//   &:disabled {
+//     background-color: $disabled-color;
+//   }
+//     }
 
 
     .logo img {
