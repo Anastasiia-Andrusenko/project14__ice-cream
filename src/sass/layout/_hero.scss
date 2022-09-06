@@ -5,6 +5,7 @@
 
 .title-btn__list {
     display: flex;
+    align-items: baseline;
     @extend %list;
 }
 
@@ -334,7 +335,6 @@
         font-size: 8px;
         line-height: 1.25;
 }
-
 
 
 

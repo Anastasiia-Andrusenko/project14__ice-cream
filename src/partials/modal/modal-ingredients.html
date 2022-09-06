@@ -1,0 +1,77 @@
+<div class="backdrop is-hidden">
+  <form class="icecream">
+    <p class="icecream__header">Chololate icecream</p>
+    <ul class="icecream__list">
+      <li class="icecream__item">
+        <p class="icecream__descr">kcal</p>
+        <p class="icecream__numbers"><span class="numbers__item">320</span></p>
+      </li>
+      <li class="icecream__item">
+        <p class="icecream__descr">Prote...</p>
+        <p class="icecream__numbers"><span class="numbers__item">4g</span></p>
+      </li>
+      <li class="icecream__item">
+        <p class="icecream__descr">Fats</p>
+        <p class="icecream__numbers"><span class="numbers__item">8,2g</span></p>
+      </li>
+      <li class="icecream__item">
+        <p class="icecream__descr">Carbs</p>
+        <p class="icecream__numbers">
+          <span class="numbers__item">40,4g</span>
+        </p>
+      </li>
+    </ul>
+    <p class="icecream__ingredients">Ingredients</p>
+    <table class="icecream__grid">
+      <tr class="grid__row">
+        <td>Milk</td>
+        <td>100ml</td>
+      </tr>
+      <tr class="grid__row">
+        <td>Belgian chocolate</td>
+        <td>20g</td>
+      </tr>
+      <tr class="grid__row">
+        <td>Cream</td>
+        <td>150 ml</td>
+      </tr>
+      <tr class="grid__row">
+        <td>Cocoa powder</td>
+        <td>30g</td>
+      </tr>
+      <tr class="grid__row">
+        <td>Sugar</td>
+        <td>40g</td>
+      </tr>
+      <tr class="grid__row">
+        <td>Vanilla sugar</td>
+        <td>10g</td>
+      </tr>
+    </table>
+    <input
+      type="text"
+      class="icecream__input"
+      placeholder="Name"
+      name="name"
+      required
+      minlength="2"
+    /><input
+      type="tel"
+      class="icecream__input"
+      placeholder="Phone"
+      name="phone"
+      required
+      minlength="10"
+    /><textarea
+      class="icecream__comment"
+      name="comment"
+      placeholder="Comment"
+    ></textarea>
+    <button class="icecream__btn btn-fill btn" type="submit">Submit</button>
+    <button type="button" class="icecream__close-btn">
+      <svg class="icecream__close-icon">
+        <use href="/src/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </form>
+</div>
