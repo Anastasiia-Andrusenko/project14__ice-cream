@@ -10,6 +10,44 @@
 }
 
 
+.btn-transparent {
+
+    background-color: transparent;
+    color: $accent-color;
+    text-decoration:underline;
+  
+    transition: color 300ms $cubic-bezier;
+
+  @media screen and (max-width: 1199px){
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 0.8;
+  }
+
+  &:hover {
+        color: $hover-color;
+  }
+  &:focus {
+        color: $hover-color;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 1.22;
+  }
+  &:disabled {
+    color: $disabled-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:focus {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+  }
+
+    
+}
+
 
 @media screen and (max-width: 767px) {
 
@@ -39,23 +77,23 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-image: url('../images/hero/ice-cream-mobile.png');
-    background-position: left 53px top 90px;
+    background-position: left 53px top 87px;
     filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
     z-index: 10;
 
 
     ////////////////////////Anamation-big-ice/////////////////////
-    animation-name: blinker;
-    animation-iteration-count: 4;
-    animation-timing-function: $cubic-bezier;
-    animation-duration: 600ms;
+    // animation-name: blinker;
+    // animation-iteration-count: 4;
+    // animation-timing-function: $cubic-bezier;
+    // animation-duration: 600ms;
 
 }
 
-@keyframes blinker {
-    from { opacity: 1.0; }
-    to { opacity: 0.0; }
-  }
+// @keyframes blinker {
+//     from { opacity: 1.0; }
+//     to { opacity: 0.0; }
+//   }
 
 
 
@@ -169,17 +207,17 @@
     z-index: 10;
 
     ////////////////////////Anamation-big-ice/////////////////////
-    animation-name: blinker;
-    animation-iteration-count: 4;
-    animation-timing-function: $cubic-bezier;
-    animation-duration: 600ms;
+//     animation-name: blinker;
+//     animation-iteration-count: 4;
+//     animation-timing-function: $cubic-bezier;
+//     animation-duration: 600ms;
 
 }
 
-@keyframes blinker {
-    from { opacity: 1.0; }
-    to { opacity: 0.0; }
-  }
+// @keyframes blinker {
+//     from { opacity: 1.0; }
+//     to { opacity: 0.0; }
+//   }
 
 
 .face-img {
@@ -244,8 +282,8 @@
     @include font (900, 28px, 34px, 0.04em);
     text-align: right;
     text-transform: uppercase;
-     color: #000000;
-     margin-bottom: 4px;
+    color: #000000;
+    margin-bottom: 4px;
     
 }
 
@@ -265,6 +303,37 @@
 .title-btn__item {
     margin-right: 8px;
     margin-bottom: 28px;
+}
+
+
+.btn-border {
+    background-color: transparent;
+    border: 2px solid $accent-color;
+
+    text-align: center;
+
+    transition: border 300ms $cubic-bezier;
+
+  &:hover {
+    border: 2px solid $hover-color;
+  }
+
+  &:focus {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.22;
+        border: 2px solid $hover-color;
+  }
+
+  &:disabled {
+    border: 2px solid $disabled-color;
+  }
+
+        padding: 4px 9px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 1.25;
 }
 
 
@@ -297,25 +366,25 @@
     /////////////////Animation plate///////////////////
 
 
-    animation-name: rot;
-    animation-duration: 600ms;
-    animation-direction: alternate;
-    animation-timing-function: $cubic-bezier;
-    animation-iteration-count: 4;
+//     animation-name: rot;
+//     animation-duration: 600ms;
+//     animation-direction: alternate;
+//     animation-timing-function: $cubic-bezier;
+//     animation-iteration-count: 4;
 
 }
 
-@keyframes rot {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
+// @keyframes rot {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+//     50% {
+//         transform: rotate(360deg);
+//     }
+//     100% {
+//       transform: rotate(0deg);
+//     }
+//   }
 
 
 .hero-description {
@@ -342,11 +411,16 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-        /* or 17px */
+   
     color: #FFFFFF;
     margin-bottom: 10px;
 
     
+}
+
+.title-btn__link--left {
+    width: 62px;
+    height: 24px;
 }
 
 }
@@ -393,18 +467,18 @@
             z-index: 10;
 
 
-////////////////////////Anamation-big-ice/////////////////////
-animation-name: blinker;
-animation-iteration-count: 4;
-animation-timing-function: $cubic-bezier;
-animation-duration: 600ms;
+// ////////////////////////Anamation-big-ice/////////////////////
+// animation-name: blinker;
+// animation-iteration-count: 4;
+// animation-timing-function: $cubic-bezier;
+// animation-duration: 600ms;
 
 }
 
-@keyframes blinker {
-    from { opacity: 1.0; }
-    to { opacity: 0.0; }
-    }
+// @keyframes blinker {
+//     from { opacity: 1.0; }
+//     to { opacity: 0.0; }
+//     }
 
 .hero-left-side {
     width: 50%;
@@ -536,25 +610,25 @@ animation-duration: 600ms;
                     // animation-iteration-count: 4;
                     // animation-timing-function: $cubic-bezier;
 
-                    transform-origin:50%;
-                    animation: 600ms rot  linear;
-                    animation-iteration-count: 4;
-                    animation-timing-function: $cubic-bezier;
+                    // transform-origin:50%;
+                    // animation: 600ms rot  linear;
+                    // animation-iteration-count: 4;
+                    // animation-timing-function: $cubic-bezier;
                     
                 }
 
 
-                @keyframes rot {
-                    0% {
-                      transform: rotate(0deg);
-                    }
-                    50% {
-                        transform: rotate(360deg);
-                    }
-                    100% {
-                      transform: rotate(0deg);
-                    }
-                  }
+                // @keyframes rot {
+                //     0% {
+                //       transform: rotate(0deg);
+                //     }
+                //     50% {
+                //         transform: rotate(360deg);
+                //     }
+                //     100% {
+                //       transform: rotate(0deg);
+                //     }
+                //   }
 
 
                 .hero-description {
@@ -604,53 +678,5 @@ animation-duration: 600ms;
 
 
                
-
-
-
-
-
 }
 
-
-// height: 450px;
-// // height: 100%;
-// width: 100%;
-// position: relative;
-// background-image: url('../images/hero/point-mobile.png');
-// background-repeat: no-repeat;
-// background-size: contain;
-// background-position: bottom;
-
-// }
-
-
-// .hero-container {
-// width: 320px;
-// height: 502px;
-
-// }
-
-// .big-ice {
-// position: absolute;
-// width: 270px;
-// height: 100%;
-// background-repeat: no-repeat;
-// background-size: auto;
-// background-image: url('../images/hero/ice-cream-mobile.png');
-// background-position: left 68px top 67px;
-// filter: drop-shadow(0 0 100px rgba(252, 252, 252, 0.44));
-// z-index: 10;
-
-
-// ////////////////////////Anamation-big-ice/////////////////////
-// animation-name: blinker;
-// animation-iteration-count: 4;
-// animation-timing-function: $cubic-bezier;
-// animation-duration: 600ms;
-
-// }
-
-// @keyframes blinker {
-// from { opacity: 1.0; }
-// to { opacity: 0.0; }
-// }

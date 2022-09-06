@@ -1,0 +1,215 @@
+.icecream {
+  position: relative;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px 20px 32px;
+  max-width: 280px;
+  background-color: $second-background-color;
+  text-align: center;
+  &__header {
+    text-align: center;
+    position: relative;
+    font-family: 'Seymour One';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include font(400, 20px, 28px, normal);
+    margin-bottom: 24px;
+    color: $text-second-color;
+    &::after {
+      content: '';
+      display: block;
+      width: 130px;
+      height: 131px;
+      border-radius: 50%;
+      margin-top: 29px;
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 130px;
+      height: 131px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -25%);
+      background-image: url(/src/images/buy-now/chocolate-icecream.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(/src/images/buy-now/chocolate-icecream@2x.jpg);
+      }
+    }
+  }
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  &__close-icon {
+    fill: #000000;
+    width: 11px;
+    height: 11px;
+  }
+  &__list {
+    @extend %list;
+    display: flex;
+    gap: 9px;
+    margin-bottom: 39px;
+  }
+  &__item {
+    position: relative;
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9cbe8f;
+    border-radius: 40px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+  }
+  &__descr {
+    @include font(400, 10px, 12px, normal);
+    color: $text-second-color;
+  }
+  &__numbers {
+    @include font(500, 10px, 28px, normal);
+    color: $text-second-color;
+    position: absolute;
+    top: -1px;
+    left: 3px;
+    width: 43px;
+    height: 43px;
+    display: block;
+    background-color: #9cbe8f;
+    border: 2px solid #9cbe8f;
+    border-radius: 50%;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__ingredients {
+    text-align: center;
+    @include font(500, 20px, 28px, normal);
+    color: $text-second-color;
+  }
+  &__grid {
+    @include font(400, 14px, 25px, 0.04em);
+    width: 240px;
+    color: $text-second-color;
+    margin-bottom: 48px;
+    margin-top: 24px;
+
+    .grid__row {
+      display: flex;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        margin-bottom: 11px;
+      }
+    }
+  }
+  &__input {
+    @include font(400, 14px, 20px, normal);
+    color: $text-second-color;
+    width: 100%;
+    padding: 11px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    &::placeholder {
+      @include font(400, 14px, 20px, normal);
+      color: $text-second-color;
+    }
+  }
+  &__comment {
+    @include font(400, 14px, 20px, normal);
+    color: $text-second-color;
+    width: 100%;
+    height: 84px;
+    padding: 11px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    &::placeholder {
+      @include font(400, 14px, 20px, normal);
+      color: $text-second-color;
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .icecream {
+    max-width: 528px;
+    padding: 32px 20px;
+    &__header::before {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -35%);
+    }
+    &__header::after {
+      margin-top: 31px;
+    }
+    &__close-btn {
+      top: 32px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+    }
+    &__list {
+      gap: 20px;
+      justify-content: center;
+    }
+    &__item {
+      width: 65px;
+      height: 90px;
+      padding-bottom: 14px;
+    }
+    &__numbers {
+      width: 53px;
+      height: 53px;
+      left: 4px;
+      font-size: 12px;
+    }
+    &__descr {
+      @include font(400, 12px, 15px, normal);
+    }
+    &__grid {
+      width: 100%;
+    }
+    &__input {
+      width: 368px;
+      padding: 11px 16px;
+    }
+    &__comment {
+      width: 368px;
+      padding: 11px 16px;
+    }
+  }
+}
