@@ -1,15 +1,16 @@
 .gallery__container {
   position: relative;
-  width: 100vh;
-  height: 100%;
 }
 
 .gallery__img {
+  animation: slideshow 8s linear infinite;
+  animation-fill-mode: forwards;
   position: absolute;
-  left: 50vw;
+  opacity: 0;
+  z-index: 900;
+  left: 50%;
   top: 24px;
   transform: translate(-50%, -50%) scale(1);
-  z-index: 900;
   border-radius: 8px;
 
   @media screen and (min-width: $tablet){
@@ -24,5 +25,46 @@
     left: 50%;
     top: 94px;
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.gallery__img--1 {
+  animation-delay: 0s;
+}
+
+.gallery__img--2 {
+  
+  animation-delay: 2s;
+}
+
+.gallery__img--3 {
+  
+  animation-delay: 4s;
+}
+
+.gallery__img--4 {
+  
+  animation-delay: 6s;
+}
+
+
+// анимация 
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  
+  20% { 
+    opacity: 1;
+    
+   }
+
+  80% {
+    opacity: 1;
+  } 
+
+  100% { 
+   opacity: 0;
   }
 }

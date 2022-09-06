@@ -1,0 +1,58 @@
+<div class="backdrop is-hidden">
+  <form class="buy-now">
+    <p class="buy-now__header">Buy now</p>
+    <div class="label__wrapper">
+      <label class="buy-now__label"
+        ><input
+          type="checkbox"
+          name="Ice Cream"
+          class="buy-now__checkbox visually-hidden"
+        /><span class="checkbox__ice-cream checkbox"
+          ><span class="checkbox__wrapper">ice cream</span></span
+        ></label
+      ><label class="buy-now__label"
+        ><input
+          type="checkbox"
+          name="Ice Coffee"
+          class="buy-now__checkbox visually-hidden"
+        /><span class="checkbox__ice-coffee checkbox"
+          ><span class="checkbox__wrapper">ice coffee</span></span
+        ></label
+      ><label class="buy-now__label"
+        ><input
+          type="checkbox"
+          name="Milkshake"
+          class="buy-now__checkbox visually-hidden"
+        /><span class="checkbox__milkshake checkbox"
+          ><span class="checkbox__wrapper">milkshake</span></span
+        ></label
+      >
+    </div>
+    <input
+      type="text"
+      name="Name"
+      class="buy-now__input"
+      required
+      placeholder="Name"
+      minlength="2"
+    /><input
+      required
+      placeholder="Phone"
+      type="tel"
+      name="Phone"
+      class="buy-now__input"
+      minlength="10"
+    /><textarea
+      name="Comment"
+      class="buy-now__comment"
+      required
+      placeholder="Comment"
+    ></textarea
+    ><button type="submit" class="buy-now__btn btn btn-fill">Submit</button>
+    <button type="button" class="buy-now__close-btn">
+      <svg class="buy-now__close-icon">
+        <use href="/src/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </form>
+</div>
