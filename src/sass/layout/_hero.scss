@@ -52,7 +52,7 @@
 
     .hero {
         height: 450px;
-        // height: 100%;
+        
         width: 100%;
         position: relative;
         background-image: url('../images/hero/point-mobile.png');
@@ -111,9 +111,7 @@
 
 }
 
-// .hero-right-side {
-//     position: relative;
-// }
+
 
 .title {
     font-family: 'Seymour One';
@@ -461,7 +459,7 @@
         position: relative;
 
         height: 590px;
-        // width: 100%;
+        
 
         background-repeat: no-repeat;
         background-image: url('../images/hero/point-desktop.png');
@@ -475,7 +473,6 @@
         .hero-container {
             display: flex;
             justify-content: space-between;
-            // width: 1200px;
             height: 590px;
 
             padding: 0 17px;
@@ -484,7 +481,7 @@
 
 
         .big-ice {
-            // position: absolute;
+            
             width: 50%;
             height: 100%;
             background-repeat: no-repeat;
@@ -525,7 +522,6 @@
                     background-repeat: no-repeat;
                     background-size: auto;
                     background-image: url('../images/hero/face-yellow-desktop.png'), url('../images/hero/face-green-desktop.png'), url('../images/hero/face-pink-desktop.png');
-                    // background-image: url('../images/hero/face-yellow-desktop.png'), url('../images/hero/face-green-tablet.png'), url('../images/hero/face-pink-tablet.png'), url('../images/hero/ice-cream-tablet.png');
                     background-position: left 3% top 43%, left 60% top 9%, left 69% top 81%;
                     z-index: 15;
                     width: 472px;
@@ -588,9 +584,6 @@
 
                     justify-content: flex-end;
 
-                    // font-family: 'Montserrat';
-                    // font-style: normal;
-                    // @include font (400, 8px, 10px, 0.04em);
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 17px;
@@ -668,10 +661,9 @@
 
                     width: 200px;
                     height: 80px;
-                    // margin-left: 217px;
                     margin-top: 75px;
                     margin-bottom: 20px;
-                    // display: block;
+           
                    
 
 
@@ -695,10 +687,6 @@
                     
                 }
 
-                // .hero-description__btn {
-                //     // margin-left: 217px;
-                //     // margin-bottom: 32px;
-                // }
 
                 .hero-left-side {
 

@@ -1,38 +1,13 @@
 <header>
   <div class="container page-header-container">
-    <div class="header-right">
-      <!-- навігація -->
-      <nav class="page-nav">
-        <a class="logo" href="./">
-          <img src="./images/hero/logo.png" alt="Ice Cream" />
-        </a>
-        <!-- <a class="logo" href="./">
-        <svg class="logo__img">
-          <use href="./images/sprite.svg#icon-logo"></use>
-        </svg>
-      </a> -->
-        <!-- меню -->
-        <ul class="menu list">
-          <li class="menu__item">
-            <a class="menu__link link" href="#hero">Home</a>
-          </li>
-          <!-- <li class="menu__item">
-          <a class="menu__link link" href="#about-us">About us</a>
-        </li> -->
-          <li class="menu__item">
-            <a class="menu__link link" href="#how-made">How it's made?</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#products">Our products</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <div class="header-container">
 
-    <div class="header-left">
+    <!-- навігація -->
+    
+      <a class="logo" href="./">
+        <img src="./images/hero/logo.png" alt="Ice Cream">
+      </a>
+
       <!-- кнопка "бургер" для мобільної і планшетної версії -->
       <button
         type="button"
@@ -45,57 +20,76 @@
         </svg>
       </button>
 
-      <!-- кнопка в хедері для десктопної і планшетної версії -->
-      <button class="button-hero" type="button" data-buy-open>Buy now</button>
     </div>
+
+      <!-- меню -->
+      <div class="menu-container">
+      <nav class="page-nav">
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link link" href="#hero">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#how-made">How it's made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#products">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+ 
+  </div>
+
+
+
+      
+
+    <!-- кнопка в хедері для десктопної і планшетної версії -->
+    <button class="button-hero" type="button"  data-buy-open>Buy now</button>
+  <!-- </div> -->
   </div>
 
   <!-- мобільне меню -->
-  <nav>
-    <div class="mobile-menu js-mobile-menu" id="mobile-menu">
-      <div class="mobile-menu__container">
-        <!-- <div class="mobile-menu__header"> -->
-        <div class="mobile-header">
-          <a class="logo_mobile-menu" href="./">
-            <!-- <svg class="logo_mobile-menu-icon"> -->
+  
+  <div class="mobile-menu js-mobile-menu" id="mobile-menu">
+    <button class="mobile-menu__close-btn js-mobile-menu__close-btn">
+       <svg class="mobile-menu__close-icon" width="19" height="19">
+        <use href="./images/sprite.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+   
+    <div class="mobile-menu__container">
+      <div class="mobile-header">
+        <a class="logo_mobile-menu" href="./" >
 
-            <!-- <svg class="logo_mobile-menu-icon" width="40" height="37">
-
-            <use href="./images/sprite.svg#icon-logo"></use>
-          </svg> -->
-            <img src="./images/logo.png" alt="Ice Cream" />
-          </a>
-          <button class="mobile-menu__close-btn js-mobile-menu__close-btn">
-            <!-- <img src="./images/hero/close.png" width="19" height="19"> -->
-            <svg class="mobile-menu__close-icon" width="19" height="19">
-              <use href="./images/sprite.svg#icon-close_40px"></use>
-            </svg>
-          </button>
-        </div>
-
-        <!-- </div> -->
-
-        <ul class="mobile-menu__list list">
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#hero">Home</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#how-made">How it's made?</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#products">Our products</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <button class="button-hero--mobile btn-fill" type="button">
-          Buy now
-          <!-- <svg class="button-hero--mobile__icon">
-          <use href="./images/sprite.svg#icon-clip"></use>
-        </svg> -->
-        </button>
+          <img src="./images/logo.png" alt="Ice Cream">
+        </a>
+       
       </div>
+
+      <nav class="mobile-nav-container"> 
+
+
+      <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#hero">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#how-made">How it's made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#contact">Contact</a>
+        </li>
+        
+      </ul>
+    </nav>
+      <button class="button-hero--mobile btn-fill" type="button" data-buy-open>Buy now</button>
     </div>
   </nav>
 </header>
@@ -150,6 +144,7 @@
               ></use>
             </svg>
           </button>
+           </div>
         </div>
       </div>
     </div>
