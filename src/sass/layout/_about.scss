@@ -16,6 +16,7 @@
     padding: 0 20px;
     margin: 0 auto;
     width: 100%;
+    
 
     @media screen and (min-width: $mobile) {
         width: $mobile;
@@ -51,6 +52,8 @@
 }
 
 .about__title {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 32px;
     width: 200px;
 
