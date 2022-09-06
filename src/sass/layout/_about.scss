@@ -165,18 +165,20 @@
     margin-bottom: 20px;
     
     @media screen and (max-width: calc($tablet - 1px)) {
-        width: 100%;
-        
-        padding-left: 30px;
-        padding-right: 30px;
+        width: calc(100% - 60px);
     }
 
     @media screen and (min-width: $tablet) {
+        width: 334px;
         margin-bottom: 48px;
     }
 
     @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
         padding-top: 39px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 463px;
     }
 
 }
@@ -186,18 +188,13 @@
     
     @media screen and (max-width: calc($tablet - 1px)) {
         text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     @media screen and (min-width: $tablet) {
-        width: 334px;
         text-align: left;
     }
 
     @media screen and (min-width: $desktop) {
-        width: 463px;
-
         @include font (400, 14px, 27px, 0.04em);
 
         &:first-child {
