@@ -10,6 +10,7 @@
 .mobile-menu__link {
     
     @include font (700, 32px, 39px, 0.04em);
+  
 
 
 
@@ -21,11 +22,6 @@
     
 }
 
-// .button-hero--mobile {
-//     display: block;
-//     margin-bottom: 51px;
-// }
-
 
 
 .page-header-container {
@@ -33,8 +29,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-    // max-width: 480px;
-    // justify-content: space-between;
+
 
   }
 
@@ -77,41 +72,34 @@
     .mobile-menu {
         
         position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: 20;
+        width: 100vw;
+        height: 100vh;
+        z-index: 900;
         top: 0;
         left: 0;
+
+        display: flex;
+        flex-direction: column;
         background-color: $main-color;
-
-        overflow: hidden;
-
         opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-               
-        transform: translate(100%);
-        
-        // transition: transform 600ms ease-in-out, opacity 450ms $cubic-bezier;
-        transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1), opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
+                     
+        transform: translateX(100%);
+        transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1), opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
     
 
     .mobile-menu.is-open {
-        transform: translate(0);
-        // transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1), opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
-       
+        transform: translateX(0);        
         opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+        
 
     }
     
     .mobile-menu__container {
       
-        // position: relative;
+     
         padding: 12px 22px;
         display: flex;
         flex-direction: column;
@@ -145,7 +133,6 @@
       
         background-color: transparent;
         border: none;
-        // padding: 12px;
         line-height: 0;
     
         width: 32px;
@@ -185,7 +172,7 @@
 
     .mobile-menu-open {
 
-        margin-right: 8px;
+        // margin-right: 8px;
         background-color: transparent;
         border: none;
         padding: 0;
@@ -194,6 +181,7 @@
         
         width: 32px;
         height: 32px;
+        padding: 3px 3px;
 
         
 
@@ -204,7 +192,17 @@
         padding: 12px 22px;
         justify-content: space-between;
         max-width: 100%;
+        display: flex;
     }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+  
 
 
     .button-hero--mobile {
@@ -263,9 +261,7 @@
 // 0px - 1199px
 @media screen and (min-width: 768px) {
 
-    .header-left {
-        display: flex;
-    }
+
 
 
     .button-hero {
@@ -341,16 +337,11 @@
     }
 
     .mobile-menu__close-btn {
-        // position: absolute;
-        // top: 16px;
-        // right: 20px;
-    
+     
       
         background-color: transparent;
         border: none;
-        // padding: 18px;
-        // margin-right: 26px;
-           margin-top: 16px;
+        margin-top: 16px;
     }
 
 
@@ -364,14 +355,6 @@
         margin-bottom: 40px;
     }
 
-
-
-    
-    
-
-
-   
-     
 
     .mobile-menu__item:not(:last-child) {
         margin-bottom: 40px;
@@ -405,7 +388,7 @@
            
         
         width: 32px;
-        // height: 32px;
+      
 
         
 
@@ -416,14 +399,20 @@
         padding: 20px 32px;
         justify-content: space-between;
         width: 100%;
-        // max-width: 767px;
+        display: flex;
+       
       
     }
 
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
 
-   
 
-    
+     
        
   }
 
@@ -446,14 +435,25 @@
 .page-header-container {
     position: relative;
     padding: 17px 16px;
-    // justify-content: space-around;
+   
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     width: 1170px;
     padding: 0;
 
 
 }
+
+.menu-container {
+    margin-right: 220px;
+}
+
+.header-container {
+    display: flex;
+    width: 65px;
+    margin-right: 269px;
+}
+
 
 .container {
     max-width: 1170px;
@@ -461,6 +461,7 @@
 
 .page-nav {
     display: flex;
+    justify-content: space-between;
 }
 
 .logo img {
@@ -469,13 +470,14 @@
     height: 65px;
     display: block;
     z-index: 22;
+    margin-right: 269px;
   }
 
 
 
 .menu {
     display: flex;
-    margin-top: 23px;
+ 
 }
 
 .menu__item:not(:last-child) {
@@ -498,19 +500,8 @@
 
 }
 
-.logo__img {
-    width: 60px;
-    height: 65px;
-}
-
-.logo {
-    margin-right: 269px;
-}
 
 }
-
- 
-
 
 
   .menu {
