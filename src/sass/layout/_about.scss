@@ -12,7 +12,6 @@
     }
 }
 
-//   Cвій контейнер
 .about__container {
     padding: 0 20px;
     margin: 0 auto;
@@ -53,6 +52,7 @@
 
 .about__title {
     margin-bottom: 32px;
+    width: 200px;
 
     @include font (400, 30px, 38px, 0.04em);
 
@@ -63,6 +63,7 @@
 
     @media screen and (min-width: $tablet) {
         margin-bottom: 40px;
+        width: 100%;
 
         @include font (400, 34px, 43px, 0.06em);
     }
@@ -71,18 +72,6 @@
         margin-bottom: 82px;
 
         @include font (400, 36px, 45px, 0.06em);
-    }
-
-    &--mobile {
-        @media screen and (min-width: $tablet) {
-            display: none;
-        }
-    }
-
-    &--tablet {
-        @media screen and (max-width: calc($tablet - 1px)) {
-            display: none;
-        }
     }
 }
 
@@ -212,6 +201,7 @@
             @include font (400, 16px, 28px, 0.04em);
         }
     }
+    
     // margins between paragraphs
     &:not(:last-child) {
         margin-bottom: 4px;
