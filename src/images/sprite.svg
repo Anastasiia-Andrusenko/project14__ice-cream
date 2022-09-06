@@ -47,7 +47,7 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
 </symbol>
 
-<symbol id="icon-read-more-btn" viewBox="0 0 32 32">
+<symbol id="icon-small-arrow-btn" viewBox="0 0 32 32">
 <path d="M10.667 29.333c-0.8 0-1.6-0.267-2.133-1.067-0.8-1.067-0.8-2.933 0.267-3.733l10.667-8.533-10.667-8.533c-1.067-0.8-1.333-2.667-0.267-3.733 0.8-1.067 2.667-1.333 3.733-0.267l13.333 10.667c0.533 0.267 1.067 1.067 1.067 1.867s-0.533 1.6-1.067 2.133l-13.333 10.667c-0.533 0.267-1.067 0.533-1.6 0.533z"></path>
 </symbol>
 </defs>
