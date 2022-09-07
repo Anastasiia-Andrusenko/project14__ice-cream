@@ -75,10 +75,13 @@
       background-color: $disabled-color;
     }
     
+
+  }
+
+  .btn-header {
     @media screen and (max-width: 767px) {
       display: none;
     }
-
   }
   
   // =========Повністю прозора кнопка
@@ -87,7 +90,11 @@
     background-color: transparent;
     color: $accent-color;
     text-decoration:underline;
-    @include font (600, 9px, 11px);
+    @include font (600, 8px, 10px);
+    height: 24px;
+    width: 85px;
+    padding: 0;
+    text-align: center;
     
     transition: color 300ms $cubic-bezier;
   
@@ -100,9 +107,7 @@
     &:disabled {
       color: $disabled-color;
     }
-    @media screen and (max-width: 767px){
-      @include font (600, 8px, 10px);
-    }
+    
   
     @media screen and (min-width: $desktop) {
         @include font (600, 14px, 17px);
