@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop__buy-now {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,9 +6,10 @@
   height: 100%;
   width: 100%;
   background-color: rgba($color: $main-color, $alpha: 0.5);
-  display: flex;
-  justify-content: center;
+
   transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
+
+  overflow-y: scroll;
 
   &.is-buy-hidden {
     opacity: 0;
@@ -16,8 +17,14 @@
     pointer-events: none;
   }
 }
+
 .buy-now {
   position: relative;
+
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0%) scale(1);
+
   border: 2px solid $accent-color;
   border-radius: 10px;
   padding: 28px;
@@ -25,12 +32,14 @@
   width: 280px;
   text-align: center;
   background-color: $second-background-color;
+
   &__header {
     font-family: 'Seymour One';
     @include font(400, 16px, 24px, normal);
     color: #000000;
     margin-bottom: 20px;
   }
+
   &__label {
     cursor: pointer;
     position: relative;
@@ -49,6 +58,7 @@
       margin: 0 auto 24px;
     }
   }
+
   &__input {
     background-color: rgba(248, 210, 78, 0.1);
     border: 1px solid $main-color;
@@ -61,6 +71,7 @@
       color: #000000;
     }
   }
+
   &__comment {
     background-color: rgba(248, 210, 78, 0.1);
     border: 1px solid $main-color;
@@ -73,9 +84,11 @@
       color: #000000;
     }
   }
+
   &__btn {
     margin: 0 auto;
   }
+
   &__close-btn {
     position: absolute;
     top: 8px;
@@ -94,6 +107,7 @@
       color: $accent-color;
     }
   }
+
   &__close-icon {
     width: 9px;
     height: 9px;
@@ -111,6 +125,7 @@
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
 }
+
 .buy-now__checkbox:checked + .checkbox__ice-cream {
   background-color: #96af8c;
 }
@@ -241,8 +256,9 @@
 @media screen and (min-width: $tablet) {
   .buy-now {
     width: 568px;
-    max-height: 644px;
+    // max-height: 644px;
     padding: 32px 54px;
+    
     &__header {
       @include font(400, 20px, 28px, normal);
       margin-bottom: 40px;
