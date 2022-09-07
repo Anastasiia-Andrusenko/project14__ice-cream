@@ -8,6 +8,7 @@
   background-color: rgba($color: $main-color, $alpha: 0.5);
   display: flex;
   justify-content: center;
+  overflow-y: scroll;
 
   transition: opacity 250ms linear, visibility 250ms linear;
   opacity: 1;

@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   transform: scale(1);
+  overflow-y: scroll;
 
   transition: opacity 250ms linear, visibility 250ms linear,
     transform 250ms linear;
