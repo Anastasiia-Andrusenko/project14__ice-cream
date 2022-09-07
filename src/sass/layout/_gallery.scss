@@ -1,8 +1,12 @@
 .gallery__container {
   position: relative;
+  min-width: 279px;
+  min-height: auto;
 }
 
 .gallery__img {
+  min-width: 279px;
+  min-height: auto;
   animation: slideshow 8s linear infinite;
   animation-fill-mode: forwards;
   position: absolute;
