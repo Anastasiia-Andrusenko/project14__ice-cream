@@ -23,8 +23,8 @@
 }
 
 .backdrop__franchise.is-franchise-hidden .franchise {
-  transform: scale(0.25);
-  transition: transform 250ms $cubic-bezier;
+  transform: translateX(-50%) translateY(0%) scale(0.25);
+  transition: translate 250ms $cubic-bezier, transform 250ms $cubic-bezier;
 }
 
 .franchise {
