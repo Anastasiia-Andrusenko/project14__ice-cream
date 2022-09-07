@@ -32,6 +32,7 @@
     margin-bottom: 20px;
   }
   &__label {
+    cursor: pointer;
     position: relative;
     @include font(700, 16px, 20px, 0.04em);
     text-transform: uppercase;
