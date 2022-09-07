@@ -1,53 +1,60 @@
 html {
-	margin: 0;
- 
+  margin: 0;
 }
 
 body {
   background-color: $main-color;
-	font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: $text-main-color;
   // letter-spacing: 0.04em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+
+  &.overflow {
+    overflow: hidden;
+  }
 }
 
 // еще есть вот такие семейства шрифтов в макете
-  // font-family: 'Roboto', sans-serif;
-  // font-family: 'Seymour One', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Seymour One', sans-serif;
 
 // всего используются 9 шрифтов, вот они расставлены по частоте использования:
-  // 1. Montserrat Medium 
-  // 2. Montserrat Bold
-  // 3. Montserrat Regular
-  // 4. Montserrat SemiBold
-  // 5. Seymour One Book
-  // 6. Roboto Bold
-  // 7. Roboto Regular
-  // 8. Montserrat ExtraBold
-  // 9. Montserrat Black
+// 1. Montserrat Medium
+// 2. Montserrat Bold
+// 3. Montserrat Regular
+// 4. Montserrat SemiBold
+// 5. Seymour One Book
+// 6. Roboto Bold
+// 7. Roboto Regular
+// 8. Montserrat ExtraBold
+// 9. Montserrat Black
 
 a {
-	text-decoration: none;
+  text-decoration: none;
   color: currentColor;
 }
 
 img {
-	display: block;
+  display: block;
 }
 
 button {
-	border: none;
+  border: none;
 }
 
 h1,
 h2,
 h3,
 p {
-	margin-top: 0;
-	margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 textarea {
-	resize: none;
+  resize: none;
 }
 
 button {
@@ -55,7 +62,7 @@ button {
   border: 0px;
 }
 ul,
-ol{
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
