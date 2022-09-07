@@ -33,7 +33,7 @@
     }
 }
 
-.about__subtitle {
+.about__label {
     margin-bottom: 12px;
 
     @include font (700, 18px, 22px, 0em);
@@ -101,8 +101,6 @@
     @media screen and (max-width: calc($tablet - 1px)) {
         margin-bottom: 65px;
         width: 100%;
-        // min-width: 278px;
-        // min-height: 278px;
         min-width: 200px;
         min-height: 200px;
         max-width: 350px;
@@ -191,7 +189,6 @@
     @media screen and (min-width: $desktop) {
         width: 463px;
     }
-
 }
 
 .about__paragraph {
