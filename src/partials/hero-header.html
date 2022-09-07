@@ -24,6 +24,7 @@
       <!-- меню -->
       <div class="menu-container">
       <nav class="page-nav">
+        <div class="nav-container">
       <ul class="menu list">
         <li class="menu__item">
           <a class="menu__link link" href="#hero">Home</a>
@@ -88,7 +89,7 @@
     </div>
   </div>  
 </header>
-<section class="hero">
+<section class="hero" id="hero">
   <div class="container hero-container">
     <!-- ліва сторона hero  -->
     <div class="hero-left-side">
@@ -100,49 +101,45 @@
       <!-- посилання під title -->
       <ul class="title-btn__list list">
         <li class="title-btn__item">
-          <button
-            class="title-btn__link--left btn btn-border"
-            type="button"
-          >
-            Products
-          </button>
+          <a class="title-btn__link--left btn btn-border" href="#products">Products</a>
         </li>
         <li class="title-btn__item">
-          <button
-            class="btn btn-transparent"
-            type="button"
-          >
-            How it's made?
-          </button>
+          <a class="btn btn-transparent" href="#how-made">How it's made?</a>
         </li>
       </ul>
       <div class="hero-description">
         <!-- текст на hero -->
         <div class="plate-ice">
-          <div class="plate-ice__img"></div>
+          <div class="plate-ice__img">
+            <div class="hero-description__block">
+              <p class="hero-description__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+              </p>
+              <!-- кнопка під текстом -->
+              <button class="hero-description__btn">
+              <svg class="hero-description__btn-icon" 
+                width="40" 
+                height="15">
+                <use
+                  href="./images/products/product_sprite.svg#icon-Arrow-1"
+                ></use>
+              </svg>
+              </button>
+          </div>
+
+
+          </div>
         </div>
-        <div class="hero-description__block">
-            <p class="hero-description__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-            </p>
-            <!-- кнопка під текстом -->
-            <button class="hero-description__btn">
-            <svg class="hero-description__btn-icon" 
-              width="40" 
-              height="15">
-              <use
-                href="./images/products/product_sprite.svg#icon-Arrow-1"
-              ></use>
-            </svg>
-            </button>
-        </div>
+        
       </div>
     </div>
     <!-- права сторона hero -->
     <div class="hero-right-side">
-      <div class="face-img"></div>
-      <div class="big-ice"></div>
+      <div class="ice">
+        <div class="face-img"></div>
+        <div class="big-ice"></div>
+      </div>
       <ul class="network-list list">
           <li class="network-list__item">
             <p class="network-list__total">16</p>
