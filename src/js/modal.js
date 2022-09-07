@@ -16,11 +16,13 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-buy-open]'),
+    openModalBtnMobile: document.querySelector('[data-buy-mobile-open]'),
     closeModalBtn: document.querySelector('[data-buy-close]'),
     modal: document.querySelector('[data-buy-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnMobile.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
@@ -61,11 +63,15 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-ingredients-open]'),
+    openModalBtn2: document.querySelector('[data-ingredients2-open]'),
+    openModalBtn3: document.querySelector('[data-ingredients3-open]'),
     closeModalBtn: document.querySelector('[data-ingredients-close]'),
     modal: document.querySelector('[data-ingredients-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn2.addEventListener('click', toggleModal);
+  refs.openModalBtn3.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
