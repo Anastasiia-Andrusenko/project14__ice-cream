@@ -21,9 +21,16 @@
 .buy-now {
   position: relative;
 
+  // позиціонування на мобілці
   top: 15px;
   left: 50%;
   transform: translateX(-50%) translateY(0%) scale(1);
+
+  // позиціонування на планшені і декстопі
+  @media screen and (min-width: $tablet) {
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%) scale(1);
+    }
 
   border: 2px solid $accent-color;
   border-radius: 10px;
