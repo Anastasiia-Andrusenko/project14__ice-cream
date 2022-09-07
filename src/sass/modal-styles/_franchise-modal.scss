@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop__franchise {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,12 +7,12 @@
   width: 100%;
   opacity: 1;
   background-color: rgba($color: $main-color, $alpha: 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: scale(1);
   transition: opacity 250ms $cubic-bezier, visibility 450ms $cubic-bezier,
-    transform 950ms $cubic-bezier;
+  transform 950ms $cubic-bezier;
+  
+  overflow-y: scroll;
+  
 
   &.is-franchise-hidden {
     visibility: hidden;
@@ -23,13 +23,18 @@
   }
 }
 
-.backdrop.is-franchise-hidden .franchise {
+.backdrop__franchise.is-franchise-hidden .franchise {
   transform: scale(0.25);
   transition: transform 250ms $cubic-bezier;
 }
 
 .franchise {
   position: relative;
+
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0%) scale(1);
+
   border: 2px solid #f8d24e;
   border-radius: 10px;
   padding: 28px;
